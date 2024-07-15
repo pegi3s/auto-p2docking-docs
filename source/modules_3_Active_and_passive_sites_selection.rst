@@ -1,0 +1,140 @@
+Active and passive sites selection
+*********
+
+cport_like
+-------------
+
+This module uses a similar process to CPORT’s algorithm [84] to retrieve active
+and passive sites for each protein from different servers. The user can choose what
+servers to use, the available options are SCRIBER [82], SPPIDER [139], PSIVER [83],
+ISPRED4 [140] and ScanNet [170] (for details see 1.3.4 Prediction of protein Interface
+Residues).
+Example:
+cport_methods="sppider scannet"
+cport_receptor=y
+cport_psiverwi= 3600
+cport_psivernr=1000
+cport_ispred4wi=3600
+cport_ispred4nr=1000
+cport_scriberwi=60
+cport_scribernr=30
+cport_spidderwi=60
+cport_spiddernr=30
+cport_scannetwi=60
+cport_scannetnr=30
+cport_exclude=receptor
+Parameter description:
+- cport_methods= Specifies the servers to use in cport_like module. In the
+example given are "sppider scannet"
+- cport_receptor=y the methodology is also applied to the receptor protein.
+If not (n) active and passive sites must be declared.
+- cport_psiverwi= wait time (in seconds) between retries to the PSIVER
+server. In the example given is 3600
+- cport_psivernr= number of retries to the PSIVER server. In the example
+given is 1000
+- cport_ispred4wi= wait time (in seconds) between retries to the ISPRED4
+server. In the example given is 3600
+- cport_ispred4nr= number of retries to the ISPRED4 server. In the
+example given is 1000
+- cport_scriberwi= wait time (in seconds) between retries to the SCRIBER
+server. In the example given is 60
+- cport_scribernr= number of retries to the SCRIBER server. In the example
+given is 30
+- cport_spidderwi= wait time (in seconds) between retries to the SPIDDER
+server. In the example given is 60
+- cport_spiddernr= number of retries to the SPIDDER server. In the
+example given is 30
+- cport_scannetwi= wait time (in seconds) between retries to the ScanNet
+server. In the example given is 60
+- cport_scannetnr= number of retries to the ScanNet server. In the example
+given is 30
+- cport_exclude= Specifies what to exclude from the analysis. If it's equal
+to "ligands", the active and passive sites will be calculated only for the
+receptor, and vice versa. If it's empty, both ligands and receptor will be
+calculated. In the example given is "receptor"
+Note 1: all these parameters must be in an independent config file inside the
+cport_like input folder. The only parameter that needs to be placed in the global config
+file it’s “cport_exclude=”.
+Note 2: To create the 'cat' (categories) files the following rules were used (0,1
+and 2 means undetermined, active and passive sites, respectively) :
+- ISPRED4: values equal or above '0.5' are replaced by '1', less than '0.5'
+are replaced by '2', and '-' are replaced by '0'.
+- SCRIBER: values equal or above '0.5' are replaced by '1', below '0.27' are
+replaced by '2', and in between '0.27' (including) and '0.5' by '0'. Missing
+positions are replaced by '0'.
+- SPPIDER: 'A' has been replaced by '1' and '-' by '0'.
+- PSIVER: values equal or above '0.5' are replaced by '1', equal or less than
+'0.37' are replaced by '2', and in between '0.37' and '0.5' by '0'. Missing
+positions are replaced by '0'.
+- ScanNet: values equal or above '0.5' are replaced by '1', equal or less
+than '0.35' are replaced by '2', and in between '0,35' and '0.5' by '0'.
+Missing positions are replaced by '0'.
+Note 3: If this module is used alone in a single module pipeline, it's necessary to
+use the copy module to copy all the necessary PDBs. For example, if the user wishes to
+calculate the active and passive sites for a ligand and a receptor, the respective PDBs
+must be in different input folders in the working_dir. The copy module should then be
+used to copy the files to PDBs/ligand and PDBs/receptor respectively. Like the following
+example, where the pdb file for the ligand it’s in input1, the pdb for the receptor it’s in
+input2 and the config file it’s in input3.
+Example
+copy input1 PDBs/Ligands
+copy input2 PDBs/Receptor
+cport_like input3 output1
+
+consensus
+--------------------
+
+This module calculates the consensus of the methods selected in cport_like. The
+active sites are marked as 1, the passive sites as 2 and the undetermined sites as 0.
+The choice of active and passive sites was based on the following rules when counting
+all options for a site in the files of the different methods analyzed:
+- If the number of 0 was greater than the number of 1 and the number of 0 was
+greater than the number of 2, the site was considered as 0 (undetermined).
+- If the number of 1 was greater than or equal to the number of 0 and the number
+of 1 was greater than the number of 2, the site was considered to be 1 (active).
+- If the number of 2 was greater than or equal to the number of 0 and the number
+of 2 was greater than the number of 1, the site was considered to be 2 (passive).
+Then, if the number of active sites is lower than that specified in
+consensus_active_min_number then a single method is chosen to create the list of active
+and passive sites. The chosen method is the one showing the highest number of active
+sites. If, as the result of this operation, there are more active sites than the number
+specified in consensus_active_max_number, the below conditions are applied as well.
+If in the consensus there are more active sites than the ones specified in
+consensus_active_max_number, then a new consensus is calculated based on two
+methods only (those specified in consensus_preferred_1 and consensus_preferred_2).
+If this option still produces more active sites than the number specified in
+consensus_active_max_number, then, if there are two consecutive active sites, the
+second one is not considered. If this procedure still produces more active sites than the
+ones specified in consensus_active_max_number, then a random set of active sites is
+chosen from the consensus produced in the previous step, to fulfil the condition imposed
+by consensus_active_max_number.
+It should be noted that if the conditions imposed by
+consensus_active_min_number and consensus_active_max_number is not met based
+on the original consensus procedure, and if the cport_like and consensus modules are
+invocated again in the pipeline, the whole procedure will be repeated based on the
+previous methods plus the new ones (please note that the results of the previous cportlike
+invocation are used). If the condition is, however, met, no action is taken when
+invoking again the cport_like and consensus modules.
+If there are fewer active sites than the ones specified in
+consensus_critical_active_number, then, the ligand being processed is no longer
+considered when running the remaining modules of the pipeline.
+Example:
+consensus_preferred_1=psiver.csv
+consensus_preferred_2=scriber.csv
+consensus_active_max_number=150
+consensus_active_min_number= 10
+consensus_critical_active_number=0
+Parameter description:
+- consensus_preferred_1= specify the first preferred method to use when
+the number of active sites is above the maximum number. In the example
+given is psiver.csv
+- consensus_preferred_2= specify the second preferred method to use
+when the number of active sites is above the maximum number. In the
+example given is scriber.csv
+- consensus_active_max_number= indicate the maximum number of
+active sites. In the example given is 150
+- consensus_active_min_number= indicate the minimal number of active
+sites. In the example given is 10
+- consensus_critical_active_number= indicate the critical number of active
+sites. If the number of active sites is below or equal this number, the
+pipeline will not run for the current ligand. In the example given is 0
