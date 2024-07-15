@@ -1,0 +1,142 @@
+Modules configuration
+*********************
+
+It should be noted that in all cases the project directory (``dir=``) must be declared.
+
+Ligand selection
+*****
+
+evoppi_querier
+-------
+This module allows you to retrieve GeneID lists from the EvoPPI databases (http://evoppi.i3s.up.pt). It takes as input a GeneID and returns from EvoPPI the corresponding list(s) of interactors, 
+as text files with one GeneID per line. The following parameters must be declared, one per line, in a file called config, which should be in the input folder of the module.
+Example:
+evoppi_q_species="Homo sapiens"
+evoppi_q_geneid=411
+evoppi_q_level=1
+evoppi_q_intdb="BioGRID; HIPPIE; Mentha; Mint; Pina2"
+evoppi_q_intmod="Homo sapiens (Modifiers_22)"
+evoppi_q_intpolyq="Homo sapiens (PolyQ_22)"
+evoppi_q_preddb="Based on Drosophila melanogaster BioGRID (DIOPT);
+Based on Drosophila melanogaster BioGRID (ENSEMBL)"
+evoppi_q_predmod=*
+evoppi_q_predpolyq="Homo sapiens Danio rerio (from DIOPT)
+(PolyQ_models_22)"
+evoppi_q_max_int=15
+Parameter description:
+- evoppi_q_species= indicate the name of the species of interest, that can
+be obtained with the following command: docker run --rm pegi3s/evoppiquerier
+list_species. In the example provided is: "Homo sapiens"
+- evoppi_q_geneid= indicate the GeneID for the gene that encodes the
+protein to be studied. In the example provided is: 411
+- evoppi_q_level= specifying the interaction level (which is the degree of
+distance (up to a maximum of three) to retrieve transitive interactions). In
+the example provided is: 1
+- evoppi_q_intdb= indicate the name of the interactome databases to be
+analyzed. The names of the interactomes for the evoppi_q_int.*
+parameters can be obtained with the following command: docker run --rm
+pegi3s/evoppi-querier list_interactomes --species <species> -dt
+interactome. In the example provided is: "BioGRID; HIPPIE; Mentha; Mint;
+Pina2"
+- evoppi_q_intmod= indicate the name of the Modifiers interactome
+databases to be analysed. The names of the Modifiers interactomes for
+the evoppi_q_int.* parameters can be obtained with the following
+command: docker run --rm pegi3s/evoppi-querier list_interactomes --
+species <species> -dt interactome. In the example provided is: "Homo
+sapiens (Modifiers_22)"
+- evoppi_q_intpolyq= indicate the name of the PolyQ interactome
+databases to be analyzed. The names of the PolyQ interactomes for the
+evoppi_q_int.* parameters can be obtained with the following command:
+docker run --rm pegi3s/evoppi-querier list_interactomes --species
+<species> -dt interactome. In the example provided is: "Homo sapiens
+(PolyQ_22)"
+- evoppi_q_preddb= indicate the name of the predictomes (predict
+interactome) databases to be analyzed. The names of the predictomes
+for the evoppi_q_pred.* parameters can be obtained with the following
+command: docker run --rm pegi3s/evoppi-querier list_interactomes --
+species <Species> -dt predictome. In the example provided is: "Based on
+Drosophila melanogaster BioGRID (DIOPT); Based on Drosophila
+melanogaster BioGRID (ENSEMBL)"
+- evoppi_q_predmod= indicate the name of the Modifiers predictomes
+databases to be analyzed. The names of the predictomes for the
+evoppi_q_pred.* parameters can be obtained with the following
+command: docker run --rm pegi3s/evoppi-querier list_interactomes --
+species <Species> -dt predictome. In the example provided is: "*" (select
+all available options)
+- evoppi_q_predpolyq= indicate the name of the PolyQ predictomes
+databases to be analyzed. The names of the predictomes for the
+evoppi_q_pred.* parameters can be obtained with the following
+command: docker run --rm pegi3s/evoppi-querier list_interactomes --
+species <Species> -dt predictome. In the example provided is: "Homo
+sapiens Danio rerio (from DIOPT) (PolyQ_models_22)"
+- evoppi_q_max_int= Indicate the maximum number of interactions to be
+analyzed. In the example provided is: 15
+Note 1: all parameters are mandatory, otherwise the program will not run.
+evoppi_q_int.* and evoppi_q_pred.* can be empty, but at least one
+interactome/predictome name must be specified. If you want to select all available
+options, you can use "*" (like evoppi_q_intdb=*).
+Note 2: the output folder of EvoPPi accepts up to two output files.
+
+
+#############This module accepts as input one or multiple FASTA files, and returns (if there is at least one significant hit) a
+FASTA file for each input file, containing all sequences showing a significant **blastn** 
+(https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html) hit. The query (``blastn_query=``) and expect
+(``blastn_expect=``) parameters must be specified in two separate lines, in the config file. SEDA-CLI operations
+([1]; https://hub.docker.com/r/pegi3s/seda/) are performed to remove line breaks from sequences.
+
+geneid2uniprotkb
+-------
+This module allows getting the reference UniProtKB number associated with a
+given GeneID. It accepts a list of Gene IDs, one per line, and returns a list of UniprotKB
+from NCBI gene (https://www.ncbi.nlm.nih.gov/gene), one per line.
+
+intersect
+-------
+This module allows you to get the intersection of two or more UniProtKB or
+GeneID lists. It generates a list of all UniProtKBs or GeneIDs common to all files.
+
+exclude
+-------
+This module allows you, given two lists of two UniProtKBs/GeneIDs, to get one
+list with all UniProtKBs/GeneIDs present in the larger list that are not present in the
+smaller list.
+
+copy
+-------
+This module copies all files from one folder to another. When copying the .pdb
+files of the ligands, it's important to check that the output folder name is "PDBs/Ligands".
+For the receptor .pdb file the output folder should be "PDBs/Receptor".
+
+human_prot_atlas
+-------
+This module allows retrieving lists of proteins encoded by genes expressed in a
+given tissue. It accepts as input a list with UniProtKb numbers, one per line, and returns
+a list of UniProtKb numbers, one per line, of those genes that are expressed in the
+specified tissue (see 1.3.1.2. The human Protein atlas). In the auto-p2docking
+configuration file, there are three parameters do be specified.
+Example:
+h_prot_atlas_inc=*
+h_prot_atlas_mode=
+h_prot_atlas_exc="Skin; Liver"
+Parameter description:
+- h_prot_atlas_inc= Specify the tissues to analyse, indicating a list of tissue
+names separated by ;, or * to analyse all available tissues (that is used by
+default).
+- h_prot_atlas_mode= you can select all proteins by writing union or those
+that are present in all selected tissues if you write intersection . If you do
+not provide information in this field, union is used by default. In the
+example provided is: "", union is used.
+- h_prot_atlas_exc= In the case of selecting all tissues (h_prot_atlas_inc=
+*) you can exclude a specific tissue by indicating it in the name of the
+tissue(s) to be excluded, separated by ;. In the example provided, Skin
+and Liver.
+The available tissues are: Brain_cerebral_cortex, Brain_hippocampal_formation,
+Brain_amygdala, Brain_basal_ganglia, Brain_thalamus, Brain_hypothalamus,
+Brain_midbrain, Brain_cerebellum, Brain_pons, Brain_medulla_oblongata,
+Brain_spinal_cord, Brain_white_matter, Choroid_plexus, Salivary_gland, Esophagus,
+Tongue, Stomach, Intestine, Pancreas, Kidney, Urinary_bladder, Breast, Vagina, Cervix,
+Endometrium, Fallopian_tube, Ovary, Placenta, Skin, Adipose_tissue,
+Seminal_vesicles, Prostate, Epididymis, Testis, Gallbladder, Liver, Lymphoid_tissue,
+Bone_marrow, Lung, Pituitary_gland, Thyroid_gland, Parathyroid_gland,
+Adrenal_gland, Smooth_muscle, Heart, Retina.
+
