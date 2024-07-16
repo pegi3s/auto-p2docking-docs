@@ -1,9 +1,9 @@
-Welcome to the Auto-Phylo v2 manual!
+Welcome to the Auto-p2docking v1 manual!
 ====================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Auto-Phylo v2
+   :caption: Auto-p2docking v1
 
    overview
    script
