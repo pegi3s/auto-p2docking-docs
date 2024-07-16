@@ -19,12 +19,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'auto-phylo-v2'
+project = u'auto-p2docking-v1'
 copyright = u'2023, Phenotypic Evolution Group and SING Research Group'
 author = u'Phenotypic Evolution Group and SING Research Group'
 
 # The short X.Y version
-version = u'2.0.0'
+version = u'1.0.0'
 # The full version, including alpha/beta/rc tags
 release = u''
 
@@ -106,7 +106,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'auto-phylo'
+htmlhelp_basename = 'auto-p2docking'
 
 
 # -- Options for LaTeX output ------------------------------------------------
