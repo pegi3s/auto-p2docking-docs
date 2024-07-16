@@ -14,15 +14,12 @@ Welcome to the Auto-p2docking v1 manual!
    :maxdepth: 2
    :caption: Built-in modules
 
-   modules_1_blast
-   modules_2_fasta_processing
-   modules_3_alignment
-   modules_4_tree_building
-   modules_5_model_checking
-   modules_6_gene_annotation
-   modules_7_pss_detection
-   modules_8_divergence_estimates
-   modules_9_special
+   modules_1_ligand_selection
+   modules_2_PDB_retrieval_and_selection
+   modules_3_active_and_passive_sites_selection
+   modules_4_docking
+   modules_5_surface_extraction
+   modules_6_data_analysis_and_visualization
 
 .. toctree::
    :maxdepth: 2
