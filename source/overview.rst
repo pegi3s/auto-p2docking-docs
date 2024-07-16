@@ -5,14 +5,6 @@ What is auto-p2docking?
 
 In addition, it uses Docker images to run any third-party software, thus Docker must be installed (see how to install Docker at <https://pegi3s.github.io/dockerfiles/>`_).
 
-.. Note::
-
-   If you use auto-phylo, please cite this publication:
-   
-   H. López-Fernández; M. Pinto; C.P. Vieira; P. Duque; M. Reboiro-Jato; J. Vieira (2023) `Auto-phylo: A Pipeline Maker 
-   for Phylogenetic Studies <https://doi.org/10.1007/978-3-031-38079-2_3>`_. 17th International Conference on Practical Applications of Computational Biology & Bioinformatics: 
-   PACBB 2023. Guimarães, Portugal. 12 - July
-
 .. _how-to-run:
 
 How to run auto-phylo
