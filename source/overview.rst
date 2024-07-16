@@ -1,11 +1,9 @@
-What is auto-phylo?
+What is auto-p2docking?
 *******************
 
-**auto-phylo** is a pipeline maker software for phylogenetic studies. A Docker image is available at `this Docker Hub repository <https://hub.docker.com/r/pegi3s/auto-phylo>`_.
+**auto-p2docking** is a pipeline maker software, made of a series of bash and python scripts, designed for protein-protein binding inferences. A Docker image is available at `this Docker Hub repository <https://hub.docker.com/r/pegi3s/auto-p2docking>`_.
 
-**auto-phylo** consists in a series of scripts designed for bash and therefore Linux is required (it has not been tested in the Windows Subsystem for Linux, for instance). 
-
-In addition, it uses Docker images to run any third-party software, thus Docker must be installed (see the official installation instructions `at the Docker manual <https://docs.docker.com/engine/install/>`_).
+In addition, it uses Docker images to run any third-party software, thus Docker must be installed (see how to install Docker at <https://pegi3s.github.io/dockerfiles/>`_).
 
 .. Note::
 
