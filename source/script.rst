@@ -5,16 +5,16 @@ This section presents the basic structure of an **auto-p2docking** script.
 
 The structure of a basic auto-p2docking script is relatively simple as the figure
 below shows, and thus, even a researcher with very basic knowledge on bash scripting should be able to write a simple
-module for parsing the FASTA files, using SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/). Assuming 
+module, especially if a Docker image that implements the desired software is already available. Assuming 
 that such module is named my_module and that it is located in the working directory (``/your/data/dir``), it can be
-copied into the Docker image, and then be invoked as any other auto-phylo module, with the following command:
+copied into the Docker image, and then be invoked as any other auto-p2docking module, with the following command:
 
 .. code-block:: docker
 
     docker run --rm \
         -v /your/data/dir:/data \
         -v /var/run/docker.sock:/var/run/docker.sock \
-            pegi3s/auto-phylo bash -c "cp /data/my_module /opt && /opt/main"
+            pegi3s/auto-p2docking bash -c "cp /data/my_module /opt && /opt/main"
 
 The following figure shows the basic structure of an auto-phylo script.
 
