@@ -3,7 +3,7 @@ What is auto-p2docking?
 
 **auto-p2docking** is a pipeline maker software, made of a series of bash and python scripts, designed for protein-protein binding inferences. A Docker image is available at `this Docker Hub repository <https://hub.docker.com/r/pegi3s/auto-p2docking>`_.
 
-In addition, it uses Docker images to run any third-party software, thus Docker must be installed (see how to install Docker at <https://pegi3s.github.io/dockerfiles/>`_).
+In addition, it uses Docker images to run third-party software, thus Docker must be installed (see how to install Docker at https://pegi3s.github.io/dockerfiles/).
 
 .. _how-to-run:
 
