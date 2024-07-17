@@ -1,11 +1,9 @@
 auto-phylo script basic structure
 *********************************
 
-This section presents the basic structure of an **auto-phylo** script.
+This section presents the basic structure of an **auto-p2docking** script.
 
-The way FASTA files should be parsed to have the format desired by the user, depends on the source database, and the
-user needs. Although, the module here provided for parsing CDS files downloaded from the NCBI Assembly database, 
-likely accommodates most user needs, the structure of a basic auto-phylo script is relatively simple as the figure
+The structure of a basic auto-p2docking script is relatively simple as the figure
 below shows, and thus, even a researcher with very basic knowledge on bash scripting should be able to write a simple
 module for parsing the FASTA files, using SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/). Assuming 
 that such module is named my_module and that it is located in the working directory (``/your/data/dir``), it can be
