@@ -1,7 +1,7 @@
 Pipeliner (GUI)
 ***************
 
-For more comfortable creation of **auto-phylo** pipelines we have developed **auto-phylo-pipeliner**, a graphical interface that allows you to create or edit your pipelines without having to write a single line of code.
+For more comfortable creation of **auto-p2docking** a pipelines we have developed **auto-phylo-pipeliner**, a graphical interface that allows you to create or edit your pipelines without having to write a single line of code.
 
 Installation
 ------------
