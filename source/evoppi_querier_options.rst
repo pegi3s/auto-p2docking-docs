@@ -156,16 +156,7 @@ For **Homo sapiens** the following options are available for these parameters (p
 
 - **evoppi_q_predpolyq**
 
-Homo sapiens Danio rerio (from Ensembl) (PolyQ_models_22)       PolyQ_models_22
-Curated Homo sapiens ATXN1 Drosophila melanogaster (from Ensembl) (PolyQ_models_22)     PolyQ_models_22
-Homo sapiens Drosophila melanogaster (from Ensembl) (PolyQ_models_22)   PolyQ_models_22
-Homo sapiens Mus musculus (from DIOPT) (PolyQ_models_22)        PolyQ_models_22
-Homo sapiens Caenorhabditis elegans (from DIOPT) (PolyQ_models_22)      PolyQ_models_22
-Homo sapiens Mus musculus (from Ensembl) (PolyQ_models_22)      PolyQ_models_22
-Curated Homo sapiens ATXN1 Drosophila melanogaster (from DIOPT) (PolyQ_models_22)       PolyQ_models_22
-Homo sapiens Caenorhabditis elegans (from Ensembl) (PolyQ_models_22)    PolyQ_models_22
-Homo sapiens Danio rerio (from DIOPT) (PolyQ_models_22) PolyQ_models_22
-Homo sapiens Drosophila melanogaster (from DIOPT) (PolyQ_models_22)     PolyQ_models_22
+"Homo sapiens Danio rerio (from Ensembl) (PolyQ_models_22)", "Curated Homo sapiens ATXN1 Drosophila melanogaster (from Ensembl) (PolyQ_models_22)", "Homo sapiens Drosophila melanogaster (from Ensembl) (PolyQ_models_22)", "Homo sapiens Mus musculus (from DIOPT) (PolyQ_models_22)", "Homo sapiens Caenorhabditis elegans (from DIOPT) (PolyQ_models_22)", "Homo sapiens Mus musculus (from Ensembl) (PolyQ_models_22)", "Curated Homo sapiens ATXN1 Drosophila melanogaster (from DIOPT) (PolyQ_models_22)", "Homo sapiens Caenorhabditis elegans (from Ensembl) (PolyQ_models_22)", "Homo sapiens Danio rerio (from DIOPT) (PolyQ_models_22)", "Homo sapiens Drosophila melanogaster (from DIOPT) (PolyQ_models_22)"
 
 For **Mus musculus** the following options are available for these parameters (please note, that you should copy the quotation marks):
 
