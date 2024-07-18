@@ -6,8 +6,7 @@ pisa_ccp4_extract
 
 This module takes as input the .pdb files of protein complexes obtained with the selected docking methodology and 
 returns a .tsv file of the best protein complex (highest number of interacting residues) and the corresponding .pdb 
-file of the best complex, using PDBePISA as implemented in the CCP4 (https://www.ccp4.ac.uk/) software. File names must be in the format 
-ReceptorUniProtKB_database_LigandUniProtKB_database_DockingMethod_name_ComplexName (for instance, P15848_AF_P59665_ditasser_FTDOCK_56.pdb). 
+file of the best complex, using PDBePISA as implemented in the CCP4 (https://www.ccp4.ac.uk/) software. File names must be in the format ReceptorUniProtKB_database_LigandUniProtKB_database_DockingMethod_name_ComplexName (for instance, P15848_AF_P59665_ditasser_FTDOCK_56.pdb). 
 The files must be placed in a folder named LigandUniProtKB_database (for instance, P59665_ditasser) within
 the module input folder.
 
