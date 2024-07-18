@@ -27,3 +27,4 @@ Welcome to the Auto-p2docking v1 manual!
    :caption: References
 
    references
+   evoppi_querier options
