@@ -104,63 +104,7 @@ For **Drosophila melanogaster** the following options are available for these pa
 
 - **evoppi_q_preddb**
 
-Based on Caenorhabditis elegans BioGRID (DIOPT) Databases
-Based on Caenorhabditis elegans CCSB Integrated Functional Network (DIOPT)      Databases
-Based on Caenorhabditis elegans CCSB WI8 (DIOPT)        Databases
-Based on Caenorhabditis elegans HINT binary all (DIOPT) Databases
-Based on Caenorhabditis elegans HINT binary hq (DIOPT)  Databases
-Based on Caenorhabditis elegans HINT co-complex all (DIOPT)     Databases
-Based on Caenorhabditis elegans HINT co-complex hq (DIOPT)      Databases
-Based on Caenorhabditis elegans HINT High-throughput-binary hq (DIOPT)  Databases
-Based on Caenorhabditis elegans HINT literature-curated-binary hq (DIOPT)       Databases
-Based on Caenorhabditis elegans HINT literature-curated-co-complex hq (DIOPT)   Databases
-Based on Caenorhabditis elegans HitPredict (DIOPT)      Databases
-Based on Caenorhabditis elegans Instruct (DIOPT)        Databases
-Based on Caenorhabditis elegans Interactome3D (DIOPT)   Databases
-Based on Caenorhabditis elegans Mentha (DIOPT)  Databases
-Based on Caenorhabditis elegans Pina2 (DIOPT)   Databases
-Based on Homo sapiens BioGRID (DIOPT)   Databases
-Based on Homo sapiens CCSB H-I-05 (DIOPT)       Databases
-Based on Homo sapiens CCSB HI-II-14 (DIOPT)     Databases
-Based on Homo sapiens CCSB HI-union (DIOPT)     Databases
-Based on Homo sapiens CCSB HuRI (DIOPT) Databases
-Based on Homo sapiens CCSB Lit-BM (DIOPT)       Databases
-Based on Homo sapiens CCSB Test space screens (DIOPT)   Databases
-Based on Homo sapiens CCSB Venkatesan-09 (DIOPT)        Databases
-Based on Homo sapiens CCSB Yang-16 (DIOPT)      Databases
-Based on Homo sapiens CCSB Yu-11 (DIOPT)        Databases
-Based on Homo sapiens HINT binary all (DIOPT)   Databases
-Based on Homo sapiens HINT binary hq (DIOPT)    Databases
-Based on Homo sapiens HINT co-complex all (DIOPT)       Databases
-Based on Homo sapiens HINT co-complex hq (DIOPT)        Databases
-Based on Homo sapiens HINT High-throughput-binary hq (DIOPT)    Databases
-Based on Homo sapiens HINT High-throughput-co-complex hq (DIOPT)        Databases
-Based on Homo sapiens HINT literature-curated-binary hq (DIOPT) Databases
-Based on Homo sapiens HINT literature-curated-co-complex hq (DIOPT)     Databases
-Based on Homo sapiens HIPPIE (DIOPT)    Databases
-Based on Homo sapiens HitPredict (DIOPT)        Databases
-Based on Homo sapiens HomoMINT binary (DIOPT)   Databases
-Based on Homo sapiens HomoMINT complexes (DIOPT)        Databases
-Based on Homo sapiens Instruct (DIOPT)  Databases
-Based on Homo sapiens Interactome3D (DIOPT)     Databases
-Based on Homo sapiens Mentha (DIOPT)    Databases
-Based on Homo sapiens Mint (DIOPT)      Databases
-Based on Homo sapiens Pina2 (DIOPT)     Databases
-Based on Mus musculus BioGRID (DIOPT)   Databases
-Based on Mus musculus HINT binary all (DIOPT)   Databases
-Based on Mus musculus HINT binary hq (DIOPT)    Databases
-Based on Mus musculus HINT co-complex all (DIOPT)       Databases
-Based on Mus musculus HINT co-complex hq (DIOPT)        Databases
-Based on Mus musculus HINT High-throughput-binary hq (DIOPT)    Databases
-Based on Mus musculus HINT High-throughput-co-complex hq (DIOPT)        Databases
-Based on Mus musculus HINT literature-curated-binary hq (DIOPT) Databases
-Based on Mus musculus HINT literature-curated-co-complex hq (DIOPT)     Databases
-Based on Mus musculus HitPredict (DIOPT)        Databases
-Based on Mus musculus Instruct (DIOPT)  Databases
-Based on Mus musculus Interactome3D (DIOPT)     Databases
-Based on Mus musculus Mentha (DIOPT)    Databases
-Based on Mus musculus Mint (DIOPT)      Databases
-Based on Mus musculus Pina2 (DIOPT)     Databases
+"Based on Caenorhabditis elegans BioGRID (DIOPT)", "Based on Caenorhabditis elegans CCSB Integrated Functional Network (DIOPT)", "Based on Caenorhabditis elegans CCSB WI8 (DIOPT)", "Based on Caenorhabditis elegans HINT binary all (DIOPT)", "Based on Caenorhabditis elegans HINT binary hq (DIOPT)", "Based on Caenorhabditis elegans HINT co-complex all (DIOPT)", "Based on Caenorhabditis elegans HINT co-complex hq (DIOPT)", "Based on Caenorhabditis elegans HINT High-throughput-binary hq (DIOPT)", "Based on Caenorhabditis elegans HINT literature-curated-binary hq (DIOPT)", "Based on Caenorhabditis elegans HINT literature-curated-co-complex hq (DIOPT)", "Based on Caenorhabditis elegans HitPredict (DIOPT)", "Based on Caenorhabditis elegans Instruct (DIOPT)", "Based on Caenorhabditis elegans Interactome3D (DIOPT)", "Based on Caenorhabditis elegans Mentha (DIOPT)", "Based on Caenorhabditis elegans Pina2 (DIOPT)", "Based on Homo sapiens BioGRID (DIOPT)", "Based on Homo sapiens CCSB H-I-05 (DIOPT)", "Based on Homo sapiens CCSB HI-II-14 (DIOPT)", "Based on Homo sapiens CCSB HI-union (DIOPT)", "Based on Homo sapiens CCSB HuRI (DIOPT)", "Based on Homo sapiens CCSB Lit-BM (DIOPT)", "Based on Homo sapiens CCSB Test space screens (DIOPT)", "Based on Homo sapiens CCSB Venkatesan-09 (DIOPT)", "Based on Homo sapiens CCSB Yang-16 (DIOPT)", "Based on Homo sapiens CCSB Yu-11 (DIOPT)", "Based on Homo sapiens HINT binary all (DIOPT)", "Based on Homo sapiens HINT binary hq (DIOPT)", "Based on Homo sapiens HINT co-complex all (DIOPT)", "Based on Homo sapiens HINT co-complex hq (DIOPT)", "Based on Homo sapiens HINT High-throughput-binary hq (DIOPT)", "Based on Homo sapiens HINT High-throughput-co-complex hq (DIOPT)", "Based on Homo sapiens HINT literature-curated-binary hq (DIOPT)", "Based on Homo sapiens HINT literature-curated-co-complex hq (DIOPT)", "Based on Homo sapiens HIPPIE (DIOPT)", "Based on Homo sapiens HitPredict (DIOPT)", "Based on Homo sapiens HomoMINT binary (DIOPT)", "Based on Homo sapiens HomoMINT complexes (DIOPT)", "Based on Homo sapiens Instruct (DIOPT)", "Based on Homo sapiens Interactome3D (DIOPT)", "Based on Homo sapiens Mentha (DIOPT)", "Based on Homo sapiens Mint (DIOPT)", "Based on Homo sapiens Pina2 (DIOPT)", "Based on Mus musculus BioGRID (DIOPT)", "Based on Mus musculus HINT binary all (DIOPT)", "Based on Mus musculus HINT binary hq (DIOPT)", "Based on Mus musculus HINT co-complex all (DIOPT)", "Based on Mus musculus HINT co-complex hq (DIOPT)", "Based on Mus musculus HINT High-throughput-binary hq (DIOPT)", "Based on Mus musculus HINT High-throughput-co-complex hq (DIOPT)", "Based on Mus musculus HINT literature-curated-binary hq (DIOPT)", "Based on Mus musculus HINT literature-curated-co-complex hq (DIOPT)", "Based on Mus musculus HitPredict (DIOPT)", "Based on Mus musculus Instruct (DIOPT)", "Based on Mus musculus Interactome3D (DIOPT)", "Based on Mus musculus Mentha (DIOPT)", "Based on Mus musculus Mint (DIOPT)", "Based on Mus musculus Pina2 (DIOPT)", "
 Based on Caenorhabditis elegans BioGRID (ENSEMBL)       Databases
 Based on Caenorhabditis elegans CCSB Integrated Functional Network (ENSEMBL)    Databases
 Based on Caenorhabditis elegans CCSB WI8 (ENSEMBL)      Databases
