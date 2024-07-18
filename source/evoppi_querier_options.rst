@@ -412,8 +412,133 @@ For **Homo sapiens** the following options are available for these parameters (p
 "Homo sapiens (PolyQ_22)"
 
 - **evoppi_q_preddb**
+
+Based on Caenorhabditis elegans BioGRID (DIOPT) Databases
+Based on Caenorhabditis elegans CCSB Integrated Functional Network (DIOPT)      Databases
+Based on Caenorhabditis elegans CCSB WI8 (DIOPT)        Databases
+Based on Caenorhabditis elegans HINT binary all (DIOPT) Databases
+Based on Caenorhabditis elegans HINT binary hq (DIOPT)  Databases
+Based on Caenorhabditis elegans HINT co-complex all (DIOPT)     Databases
+Based on Caenorhabditis elegans HINT co-complex hq (DIOPT)      Databases
+Based on Caenorhabditis elegans HINT High-throughput-binary hq (DIOPT)  Databases
+Based on Caenorhabditis elegans HINT literature-curated-binary hq (DIOPT)       Databases
+Based on Caenorhabditis elegans HINT literature-curated-co-complex hq (DIOPT)   Databases
+Based on Caenorhabditis elegans HitPredict (DIOPT)      Databases
+Based on Caenorhabditis elegans Instruct (DIOPT)        Databases
+Based on Caenorhabditis elegans Interactome3D (DIOPT)   Databases
+Based on Caenorhabditis elegans Mentha (DIOPT)  Databases
+Based on Caenorhabditis elegans Pina2 (DIOPT)   Databases
+Based on Drosophila melanogaster BioGRID (DIOPT)        Databases
+Based on Drosophila melanogaster DroIDfly (DIOPT)       Databases
+Based on Drosophila melanogaster DroID PPI from other DBs (DIOPT)       Databases
+Based on Drosophila melanogaster DroID PPI curated by FlyBase (DIOPT)   Databases
+Based on Drosophila melanogaster FlyBase Gene Genetic Interactions (DIOPT)      Databases
+Based on Drosophila melanogaster Flybase Physical Interactions (DIOPT)  Databases
+Based on Drosophila melanogaster HINT binary all (DIOPT)        Databases
+Based on Drosophila melanogaster HINT binary hq (DIOPT) Databases
+Based on Drosophila melanogaster HINT co-complex all (DIOPT)    Databases
+Based on Drosophila melanogaster HINT co-complex hq (DIOPT)     Databases
+Based on Drosophila melanogaster HINT High-throughput-binary hq (DIOPT) Databases
+Based on Drosophila melanogaster HINT High-throughput-co-complex hq (DIOPT)     Databases
+Based on Drosophila melanogaster HINT literature-curated-binary hq (DIOPT)      Databases
+Based on Drosophila melanogaster HINT literature-curated-co-complex hq (DIOPT)  Databases
+Based on Drosophila melanogaster HitPredict (DIOPT)     Databases
+Based on Drosophila melanogaster Instruct (DIOPT)       Databases
+Based on Drosophila melanogaster Interactome3D (DIOPT)  Databases
+Based on Drosophila melanogaster Mentha (DIOPT) Databases
+Based on Drosophila melanogaster Mint (DIOPT)   Databases
+Based on Drosophila melanogaster Pina2 (DIOPT)  Databases
+Based on Mus musculus BioGRID (DIOPT)   Databases
+Based on Mus musculus HINT binary all (DIOPT)   Databases
+Based on Mus musculus HINT binary hq (DIOPT)    Databases
+Based on Mus musculus HINT co-complex all (DIOPT)       Databases
+Based on Mus musculus HINT co-complex hq (DIOPT)        Databases
+Based on Mus musculus HINT High-throughput-binary hq (DIOPT)    Databases
+Based on Mus musculus HINT High-throughput-co-complex hq (DIOPT)        Databases
+Based on Mus musculus HINT literature-curated-binary hq (DIOPT) Databases
+Based on Mus musculus HINT literature-curated-co-complex hq (DIOPT)     Databases
+Based on Mus musculus HitPredict (DIOPT)        Databases
+Based on Mus musculus Instruct (DIOPT)  Databases
+Based on Mus musculus Interactome3D (DIOPT)     Databases
+Based on Mus musculus Mentha (DIOPT)    Databases
+Based on Mus musculus Mint (DIOPT)      Databases
+Based on Mus musculus Pina2 (DIOPT)     Databases
+Based on Caenorhabditis elegans BioGRID (ENSEMBL)       Databases
+Based on Caenorhabditis elegans CCSB Integrated Functional Network (ENSEMBL)    Databases
+Based on Caenorhabditis elegans CCSB WI8 (ENSEMBL)      Databases
+Based on Caenorhabditis elegans HINT binary all (ENSEMBL)       Databases
+Based on Caenorhabditis elegans HINT binary hq (ENSEMBL)        Databases
+Based on Caenorhabditis elegans HINT co-complex all (ENSEMBL)   Databases
+Based on Caenorhabditis elegans HINT co-complex hq (ENSEMBL)    Databases
+Based on Caenorhabditis elegans HINT High-throughput-binary hq (ENSEMBL)        Databases
+Based on Caenorhabditis elegans HINT literature-curated-binary hq (ENSEMBL)     Databases
+Based on Caenorhabditis elegans HINT literature-curated-co-complex hq (ENSEMBL) Databases
+Based on Caenorhabditis elegans HitPredict (ENSEMBL)    Databases
+Based on Caenorhabditis elegans Instruct (ENSEMBL)      Databases
+Based on Caenorhabditis elegans Interactome3D (ENSEMBL) Databases
+Based on Caenorhabditis elegans Mentha (ENSEMBL)        Databases
+Based on Caenorhabditis elegans Pina2 (ENSEMBL) Databases
+Based on Drosophila melanogaster BioGRID (ENSEMBL)      Databases
+Based on Drosophila melanogaster DroIDfly (ENSEMBL)     Databases
+Based on Drosophila melanogaster DroID PPI from other DBs (ENSEMBL)     Databases
+Based on Drosophila melanogaster DroID PPI curated by FlyBase (ENSEMBL) Databases
+Based on Drosophila melanogaster FlyBase Gene Genetic Interactions (ENSEMBL)    Databases
+Based on Drosophila melanogaster Flybase Physical Interactions (ENSEMBL)        Databases
+Based on Drosophila melanogaster HINT binary all (ENSEMBL)      Databases
+Based on Drosophila melanogaster HINT binary hq (ENSEMBL)       Databases
+Based on Drosophila melanogaster HINT co-complex all (ENSEMBL)  Databases
+Based on Drosophila melanogaster HINT co-complex hq (ENSEMBL)   Databases
+Based on Drosophila melanogaster HINT High-throughput-binary hq (ENSEMBL)       Databases
+Based on Drosophila melanogaster HINT High-throughput-co-complex hq (ENSEMBL)   Databases
+Based on Drosophila melanogaster HINT literature-curated-binary hq (ENSEMBL)    Databases
+Based on Drosophila melanogaster HINT literature-curated-co-complex hq (ENSEMBL)        Databases
+Based on Drosophila melanogaster HitPredict (ENSEMBL)   Databases
+Based on Drosophila melanogaster Instruct (ENSEMBL)     Databases
+Based on Drosophila melanogaster Interactome3D (ENSEMBL)        Databases
+Based on Drosophila melanogaster Mentha (ENSEMBL)       Databases
+Based on Drosophila melanogaster Mint (ENSEMBL) Databases
+Based on Drosophila melanogaster Pina2 (ENSEMBL)        Databases
+Based on Mus musculus BioGRID (ENSEMBL) Databases
+Based on Mus musculus HINT binary all (ENSEMBL) Databases
+Based on Mus musculus HINT binary hq (ENSEMBL)  Databases
+Based on Mus musculus HINT co-complex all (ENSEMBL)     Databases
+Based on Mus musculus HINT co-complex hq (ENSEMBL)      Databases
+Based on Mus musculus HINT High-throughput-binary hq (ENSEMBL)  Databases
+Based on Mus musculus HINT High-throughput-co-complex hq (ENSEMBL)      Databases
+Based on Mus musculus HINT literature-curated-binary hq (ENSEMBL)       Databases
+Based on Mus musculus HINT literature-curated-co-complex hq (ENSEMBL)   Databases
+Based on Mus musculus HitPredict (ENSEMBL)      Databases
+Based on Mus musculus Instruct (ENSEMBL)        Databases
+Based on Mus musculus Interactome3D (ENSEMBL)   Databases
+Based on Mus musculus Mentha (ENSEMBL)  Databases
+Based on Mus musculus Mint (ENSEMBL)    Databases
+Based on Mus musculus Pina2 (ENSEMBL)   Databases
+
+
+Based on Danio rerio BioGRID (DIOPT)    Databases
+Based on Danio rerio BioGRID (ENSEMBL)  Databases
+
 - **evoppi_q_predmod**
+
+Homo sapiens Drosophila melanogaster (from Ensembl) (Modifiers_models_22)       Modifiers_models_22
+Homo sapiens Mus musculus (from DIOPT) (Modifiers_models_22)    Modifiers_models_22
+Homo sapiens Caenorhabditis elegans (from DIOPT) (Modifiers_models_22)  Modifiers_models_22
+Homo sapiens Mus musculus (from Ensembl) (Modifiers_models_22)  Modifiers_models_22
+Homo sapiens Caenorhabditis elegans (from Ensembl) (Modifiers_models_22)        Modifiers_models_22
+Homo sapiens Drosophila melanogaster (from DIOPT) (Modifiers_models_22) Modifiers_models_22
+
 - **evoppi_q_predpolyq**
+
+Homo sapiens Danio rerio (from Ensembl) (PolyQ_models_22)       PolyQ_models_22
+Curated Homo sapiens ATXN1 Drosophila melanogaster (from Ensembl) (PolyQ_models_22)     PolyQ_models_22
+Homo sapiens Drosophila melanogaster (from Ensembl) (PolyQ_models_22)   PolyQ_models_22
+Homo sapiens Mus musculus (from DIOPT) (PolyQ_models_22)        PolyQ_models_22
+Homo sapiens Caenorhabditis elegans (from DIOPT) (PolyQ_models_22)      PolyQ_models_22
+Homo sapiens Mus musculus (from Ensembl) (PolyQ_models_22)      PolyQ_models_22
+Curated Homo sapiens ATXN1 Drosophila melanogaster (from DIOPT) (PolyQ_models_22)       PolyQ_models_22
+Homo sapiens Caenorhabditis elegans (from Ensembl) (PolyQ_models_22)    PolyQ_models_22
+Homo sapiens Danio rerio (from DIOPT) (PolyQ_models_22) PolyQ_models_22
+Homo sapiens Drosophila melanogaster (from DIOPT) (PolyQ_models_22)     PolyQ_models_22
 
 For **Mus musculus** the following options are available for these parameters (please note, that you should copy the quotation marks):
 
