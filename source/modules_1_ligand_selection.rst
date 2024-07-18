@@ -30,33 +30,16 @@ where:
 
 - evoppi_q_level specifies the interaction level (which is the degree of distance (up to a maximum of three) to retrieve transitive interactions).
 
-- evoppi_q_intdb indicates the name of the interactome databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons (for instance, "BioGRID; HIPPIE; Mentha; Mint;Pina2". * means all databases.
+- evoppi_q_intdb indicates the name of the interactome databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons (for instance, "BioGRID; HIPPIE; Mentha; Mint;Pina2"). * means all databases.
 
-- evoppi_q_intmod= indicate the name of the Modifiers interactome
-databases to be analysed. The names of the Modifiers interactomes for
-the evoppi_q_int.* parameters can be obtained with the following
-command: docker run --rm pegi3s/evoppi-querier list_interactomes --
-species <species> -dt interactome. In the example provided is: "Homo
-sapiens (Modifiers_22)"
-- evoppi_q_intpolyq= indicate the name of the PolyQ interactome
-databases to be analyzed. The names of the PolyQ interactomes for the
-evoppi_q_int.* parameters can be obtained with the following command:
-docker run --rm pegi3s/evoppi-querier list_interactomes --species
-<species> -dt interactome. In the example provided is: "Homo sapiens
-(PolyQ_22)"
-- evoppi_q_preddb= indicate the name of the predictomes (predict
-interactome) databases to be analyzed. The names of the predictomes
-for the evoppi_q_pred.* parameters can be obtained with the following
-command: docker run --rm pegi3s/evoppi-querier list_interactomes --
-species <Species> -dt predictome. In the example provided is: "Based on
-Drosophila melanogaster BioGRID (DIOPT); Based on Drosophila
-melanogaster BioGRID (ENSEMBL)"
-- evoppi_q_predmod= indicate the name of the Modifiers predictomes
-databases to be analyzed. The names of the predictomes for the
-evoppi_q_pred.* parameters can be obtained with the following
-command: docker run --rm pegi3s/evoppi-querier list_interactomes --
-species <Species> -dt predictome. In the example provided is: "*" (select
-all available options)
+- evoppi_q_intmod indicates the name of the Modifiers interactome databases to be analysed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+
+- evoppi_q_intpolyq indicates the name of the PolyQ interactome databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+
+- evoppi_q_preddb indicates the name of the predictomes (predict interactome) databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+
+- evoppi_q_predmod= indicates the name of the Modifiers predictomes databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+
 - evoppi_q_predpolyq= indicate the name of the PolyQ predictomes
 databases to be analyzed. The names of the predictomes for the
 evoppi_q_pred.* parameters can be obtained with the following
