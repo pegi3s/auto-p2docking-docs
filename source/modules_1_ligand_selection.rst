@@ -103,9 +103,11 @@ smaller list.
 
 copy
 -------
-This module copies all files from one folder to another. When copying the .pdb
-files of the ligands, it's important to check that the output folder name is "PDBs/Ligands".
-For the receptor .pdb file the output folder should be "PDBs/Receptor".
+This module copies all files from one folder to another. It should be noted that for the pipeline to work,
+the PDB files of all ligands must be in a folder named Ligands, and the PDB files of the receptor in a folder 
+named Receptor, both under a folder called PDBs, under the project folder (the
+variable project is assigned in the config file). Therefore, if this is the intended operation, in the pipeline file, 
+it should be declared on two different lines "copy name_of_ligand_input_folder PDBs/Ligands", and "copy name_of_receptor_input_folder PDBs/Receptor". 
 
 human_prot_atlas
 -------
