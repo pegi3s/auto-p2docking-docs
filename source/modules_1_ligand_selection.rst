@@ -40,14 +40,10 @@ where:
 
 - evoppi_q_predmod= indicates the name of the Modifiers predictomes databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
 
-- evoppi_q_predpolyq= indicate the name of the PolyQ predictomes
-databases to be analyzed. The names of the predictomes for the
-evoppi_q_pred.* parameters can be obtained with the following
-command: docker run --rm pegi3s/evoppi-querier list_interactomes --
-species <Species> -dt predictome. In the example provided is: "Homo
-sapiens Danio rerio (from DIOPT) (PolyQ_models_22)"
-- evoppi_q_max_int= Indicate the maximum number of interactions to be
-analyzed. In the example provided is: 15
+- evoppi_q_predpolyq indicates the name of the PolyQ predictomes databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+
+- evoppi_q_max_int Indicates the maximum number of interactions to be analyzed (a random sample taken from the full list of interactions).
+
 Note 1: all parameters are mandatory, otherwise the program will not run.
 evoppi_q_int.* and evoppi_q_pred.* can be empty, but at least one
 interactome/predictome name must be specified. If you want to select all available
