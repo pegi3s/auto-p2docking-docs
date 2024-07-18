@@ -16,6 +16,8 @@ The following species are available for the evoppi_q_species parameter. Please n
 - "Rattus norvegicus"
 - "Xenopus laevis"
 
+For EvoPPI database details please see https://link.springer.com/article/10.1007/s12539-019-00317-y and https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10561075/
+
 For **Bos taurus** the following options are available for these parameters (please note, that you should copy the quotation marks):
 
 - **evoppi_q_intdb**
