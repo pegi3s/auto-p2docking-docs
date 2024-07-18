@@ -92,7 +92,16 @@ For Oryctolagus cuniculus the following options are available for these paramete
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For Danio rerio the following options are available for these parameters (please note, that you should copy the quotation marks):
+For Rattus norvegicus the following options are available for these parameters (please note, that you should copy the quotation marks):
+
+- **evoppi_q_intdb**
+- **evoppi_q_intmod**
+- **evoppi_q_intpolyq**
+- **evoppi_q_preddb**
+- **evoppi_q_predmod**
+- **evoppi_q_predpolyq**
+
+For Xenopus laevis the following options are available for these parameters (please note, that you should copy the quotation marks):
 
 - **evoppi_q_intdb**
 - **evoppi_q_intmod**
