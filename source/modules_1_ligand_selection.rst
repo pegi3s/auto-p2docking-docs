@@ -24,38 +24,28 @@ as text files with one GeneID per line. The following parameters must be declare
 
 where:
 
-- evoppi_q_species indicates the name of the species of interest, for instance "Homo sapiens". The full list of available species can be found in the evoppi_querier_options section.
+- ``evoppi_q_species`` indicates the name of the species of interest, for instance "Homo sapiens". The full list of available species can be found in the evoppi_querier_options section.
 
-- evoppi_q_geneid indicates the GeneID for the gene that encodes the protein to be studied.
+- ``evoppi_q_geneid`` indicates the GeneID for the gene that encodes the protein to be studied.
 
-- evoppi_q_level specifies the interaction level (which is the degree of distance (up to a maximum of three) to retrieve transitive interactions).
+- ``evoppi_q_level`` specifies the interaction level (which is the degree of distance (up to a maximum of three) to retrieve transitive interactions).
 
-- evoppi_q_intdb indicates the name of the interactome databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons (for instance, "BioGRID; HIPPIE; Mentha; Mint;Pina2"). * means all databases.
+- ``evoppi_q_intdb`` indicates the name of the interactome databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons (for instance, "BioGRID; HIPPIE; Mentha; Mint;Pina2"). * means all databases.
 
-- evoppi_q_intmod indicates the name of the Modifiers interactome databases to be analysed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+- ``evoppi_q_intmod`` indicates the name of the Modifiers interactome databases to be analysed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
 
-- evoppi_q_intpolyq indicates the name of the PolyQ interactome databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+- ``evoppi_q_intpolyq`` indicates the name of the PolyQ interactome databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
 
-- evoppi_q_preddb indicates the name of the predictomes (predict interactome) databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+- ``evoppi_q_preddb`` indicates the name of the predictomes (predict interactome) databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
 
-- evoppi_q_predmod= indicates the name of the Modifiers predictomes databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+- ``evoppi_q_predmod`` indicates the name of the Modifiers predictomes databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
 
-- evoppi_q_predpolyq indicates the name of the PolyQ predictomes databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+- ``evoppi_q_predpolyq`` indicates the name of the PolyQ predictomes databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
 
-- evoppi_q_max_int Indicates the maximum number of interactions to be analyzed (a random sample taken from the full list of interactions).
+- ``evoppi_q_max_int`` Indicates the maximum number of interactions to be analyzed (a random sample taken from the full list of interactions).
 
-Note 1: all parameters are mandatory, otherwise the program will not run.
-evoppi_q_int.* and evoppi_q_pred.* can be empty, but at least one
-interactome/predictome name must be specified. If you want to select all available
-options, you can use "*" (like evoppi_q_intdb=*).
-Note 2: the output folder of EvoPPi accepts up to two output files.
-
-
-#############This module accepts as input one or multiple FASTA files, and returns (if there is at least one significant hit) a
-FASTA file for each input file, containing all sequences showing a significant **blastn** 
-(https://blast.ncbi.nlm.nih.gov/doc/blast-help/downloadblastdata.html) hit. The query (``blastn_query=``) and expect
-(``blastn_expect=``) parameters must be specified in two separate lines, in the config file. SEDA-CLI operations
-([1]; https://hub.docker.com/r/pegi3s/seda/) are performed to remove line breaks from sequences.
+**Note 1**: all parameters are mandatory, otherwise the program will not run. evoppi_q_int.* and evoppi_q_pred.* can be empty, but at least one interactome/predictome name must be specified.
+**Note 2**: the output folder of EvoPPi accepts up to two output files.
 
 geneid2uniprotkb
 -------
