@@ -19,22 +19,10 @@ This module allows you to retrieve PDB files from the HPmod database (https://zh
 tm-align-pdb
 -------------------
 
-This module allows the automated submission of PDB files obtained from AF, HPmod database, or any other database (file names must not end with the ‘_PDB’ tag) and a PDB file from the PDB database (file names must end with the ‘_PDB’ tag) to the TM-align server (https://zhanggroup.org/TM-align/), in order to select the PDB file with the highest TM score when compared with data from the PDB database. Only PDB files with the same UniProtKB number will be compared. If no data exists in PDB database for the protein being analyzed, no action is taken.
+This module allows the automated submission of PDB files obtained from AF, HPmod database, or any other database (file names must not end with the ‘_PDB’ tag) and a PDB file from the PDB database (file names must end with the ‘_PDB’ tag) to the TM-align server (https://zhanggroup.org/TM-align/), in order to select the PDB file with the highest TM score when compared with data from the PDB database (for instance, P15848_AF.pdb and P15848_PDB.pdb, respectively). Only PDB files with the same UniProtKB number will be compared. If no data exists in PDB database for the protein being analyzed, no action is taken.
 
 tm-align-cutoff
 ------------
 
 This module allows automatic submission of pairs of PDB structures (AF, HPmod, or any other database) to the TM align server (https://zhanggroup.org/TM-align/), to remove PDB files that have very similar structures
-(according to the value declared in the variable tm_cutoff_ref). If there is nothing to compare with, no action is taken. The file names are not changed. Only file names starting with the same Uniprot number are compared.
-Example:
-tm_cutoff_ref=0.45
-tm_cutoff_order="AF-ditasser-itasser"
-Parameter description:
-- tm_cutoff_ref= Specifies the minimum value of the TM score. If the TMscore
-value is above that declared, then the file that is retained is the one
-first matching one of the tags declared in the variable tm_cutoff_order=. If
-the TM-score is below the one specified in the tm_cutoff_ref parameter,
-both PDB files will be kept. In the example given is 0.45
-- tm_cutoff_order= Specifies the order of the files to be kept. In the example
-provided is "AF-ditasser-itasser" which would select the AF .pdb if the TMscore
-is above the tm_cutoff_ref parameter.
+(according to the value declared in the variable tm_cutoff_ref). If there is nothing to compare with, no action is taken. The file names are not changed. Only file names starting with the same Uniprot number are compared (for instance, P15848_AF.pdb and P15848_ditasser.pdb). In addition to the tm_cutoff value, the tm_cutoff_order parameter must also be specified in the config file. The tm_cutoff_ref parameter specifies the value of the TM score above which only one of the files being compared will be retained. The file that is retained is declared by the order specificied in the in the tm_cutoff_order parameter (for instance, tm_cutoff_order="AF-ditasser-itasser", which results in the selection of the file with the _AF tag first, if not available, the one with the _ditasser tag, and then, if not available, the one with the _itasser tag).
