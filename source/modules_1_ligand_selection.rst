@@ -23,27 +23,15 @@ as text files with one GeneID per line. The following parameters must be declare
 - evoppi_q_max_int=
 
 where:
-- evoppi_q_species indicates the name of the species of interest, for instance "Homo sapiens". The full list of
-available species can be obtained by invoking in the command 
 
+- evoppi_q_species indicates the name of the species of interest, for instance "Homo sapiens". The full list of available species can be found in the evoppi_querier_options section.
 
+- evoppi_q_geneid indicates the GeneID for the gene that encodes the protein to be studied.
 
+- evoppi_q_level specifies the interaction level (which is the degree of distance (up to a maximum of three) to retrieve transitive interactions).
 
+- evoppi_q_intdb indicates the name of the interactome databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons (for instance, "BioGRID; HIPPIE; Mentha; Mint;Pina2". * means all databases.
 
-, that can
-be obtained with the following command: docker run --rm pegi3s/evoppiquerier
-list_species. In the example provided is: "Homo sapiens"
-- evoppi_q_geneid= indicate the GeneID for the gene that encodes the
-protein to be studied. In the example provided is: 411
-- evoppi_q_level= specifying the interaction level (which is the degree of
-distance (up to a maximum of three) to retrieve transitive interactions). In
-the example provided is: 1
-- evoppi_q_intdb= indicate the name of the interactome databases to be
-analyzed. The names of the interactomes for the evoppi_q_int.*
-parameters can be obtained with the following command: docker run --rm
-pegi3s/evoppi-querier list_interactomes --species <species> -dt
-interactome. In the example provided is: "BioGRID; HIPPIE; Mentha; Mint;
-Pina2"
 - evoppi_q_intmod= indicate the name of the Modifiers interactome
 databases to be analysed. The names of the Modifiers interactomes for
 the evoppi_q_int.* parameters can be obtained with the following
