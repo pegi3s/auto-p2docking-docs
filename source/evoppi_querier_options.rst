@@ -22,14 +22,63 @@ For **Bos taurus** the following options are available for these parameters (ple
 
 "BioGRID", "HINT binary_all", "HINT binary_hq", "HINT co-complex_all", "HINT co-complex_hq", "HINT literature-curated-binary_hq", "HINT literature-curated-co-complex_hq", "Interactome3D"
 
-
 - **evoppi_q_intmod**
+
 - **evoppi_q_intpolyq**
+
 - **evoppi_q_preddb**
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For Caenorhabditis elegans the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Caenorhabditis elegans** the following options are available for these parameters (please note, that you should copy the quotation marks):
+
+- **evoppi_q_intdb**
+
+"BioGRID", "CCSB Integrated_Functional_Network", "CCSB WI8", "HINT binary_all", "HINT binary_hq", "HINT co-complex_all", "HINT co-complex_hq", "HINT High-throughput-binary_hq", "HINT literature-curated-binary_hq", "HINT literature-curated-co-complex_hq", "HitPredict", "Instruct", "Interactome3D", "Mentha", "Pina2"
+
+- **evoppi_q_intmod**
+
+- **evoppi_q_intpolyq**
+
+"Caenorhabditis elegans (PolyQ_22)"
+
+- **evoppi_q_preddb**
+- **evoppi_q_predmod**
+- **evoppi_q_predpolyq**
+
+For **Danio rerio** the following options are available for these parameters (please note, that you should copy the quotation marks):
+
+- **evoppi_q_intdb**
+
+"BioGRID"
+
+- **evoppi_q_intmod**
+
+- **evoppi_q_intpolyq**
+
+- **evoppi_q_preddb**
+- **evoppi_q_predmod**
+- **evoppi_q_predpolyq**
+
+For **Drosophila melanogaster** the following options are available for these parameters (please note, that you should copy the quotation marks):
+
+- **evoppi_q_intdb**
+
+"BioGRID", "DroIDfly", "DroID PPI_from_other_DBs", "DroID PPI_curated_by_FlyBase", "FlyBase Gene_Genetic_Interactions", "FlyBase Physical_Interactions", "HINT binary_all", "HINT binary_hq", "HINT co-complex_all", "HINT co-complex_hq", "HINT High-throughput-binary_hq", "HINT High-throughput-co-complex_hq", "HINT literature-curated-binary_hq", "HINT literature-curated-co-complex_hq", "HitPredict", "Instruct", "Interactome3D", "Mentha", "Mint", "Pina2"
+
+- **evoppi_q_intmod**
+
+"Drosophila melanogaster (Modifiers_22)"
+
+- **evoppi_q_intpolyq**
+
+"Drosophila melanogaster (PolyQ_22)"
+
+- **evoppi_q_preddb**
+- **evoppi_q_predmod**
+- **evoppi_q_predpolyq**
+
+For **Gallus gallus** the following options are available for these parameters (please note, that you should copy the quotation marks):
 
 - **evoppi_q_intdb**
 - **evoppi_q_intmod**
@@ -38,7 +87,7 @@ For Caenorhabditis elegans the following options are available for these paramet
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For Danio rerio the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Homo sapiens** the following options are available for these parameters (please note, that you should copy the quotation marks):
 
 - **evoppi_q_intdb**
 - **evoppi_q_intmod**
@@ -47,7 +96,7 @@ For Danio rerio the following options are available for these parameters (please
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For Drosophila melanogaster the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Mus musculus** the following options are available for these parameters (please note, that you should copy the quotation marks):
 
 - **evoppi_q_intdb**
 - **evoppi_q_intmod**
@@ -56,7 +105,7 @@ For Drosophila melanogaster the following options are available for these parame
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For Gallus gallus the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Oryctolagus cuniculus** the following options are available for these parameters (please note, that you should copy the quotation marks):
 
 - **evoppi_q_intdb**
 - **evoppi_q_intmod**
@@ -65,7 +114,7 @@ For Gallus gallus the following options are available for these parameters (plea
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For Homo sapiens the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Rattus norvegicus** the following options are available for these parameters (please note, that you should copy the quotation marks):
 
 - **evoppi_q_intdb**
 - **evoppi_q_intmod**
@@ -74,34 +123,7 @@ For Homo sapiens the following options are available for these parameters (pleas
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For Mus musculus the following options are available for these parameters (please note, that you should copy the quotation marks):
-
-- **evoppi_q_intdb**
-- **evoppi_q_intmod**
-- **evoppi_q_intpolyq**
-- **evoppi_q_preddb**
-- **evoppi_q_predmod**
-- **evoppi_q_predpolyq**
-
-For Oryctolagus cuniculus the following options are available for these parameters (please note, that you should copy the quotation marks):
-
-- **evoppi_q_intdb**
-- **evoppi_q_intmod**
-- **evoppi_q_intpolyq**
-- **evoppi_q_preddb**
-- **evoppi_q_predmod**
-- **evoppi_q_predpolyq**
-
-For Rattus norvegicus the following options are available for these parameters (please note, that you should copy the quotation marks):
-
-- **evoppi_q_intdb**
-- **evoppi_q_intmod**
-- **evoppi_q_intpolyq**
-- **evoppi_q_preddb**
-- **evoppi_q_predmod**
-- **evoppi_q_predpolyq**
-
-For Xenopus laevis the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Xenopus laevis** the following options are available for these parameters (please note, that you should copy the quotation marks):
 
 - **evoppi_q_intdb**
 - **evoppi_q_intmod**
