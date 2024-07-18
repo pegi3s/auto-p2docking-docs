@@ -6,6 +6,7 @@ Welcome to the Auto-p2docking v1 manual!
    :caption: Auto-p2docking v1
 
    overview
+   version_customization
    script
    test_data
    pipeliner
