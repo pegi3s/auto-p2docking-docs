@@ -81,6 +81,11 @@ copy input1 PDBs/Ligands
 copy input2 PDBs/Receptor
 cport_like input3 output1
 
+
+The files must have the following
+UniProtKB_database name structure (e.g.: P59665_AF.pdb, P15848_ditasser.pdb).
+
+
 consensus
 --------------------
 
@@ -138,3 +143,9 @@ sites. In the example given is 10
 - consensus_critical_active_number= indicate the critical number of active
 sites. If the number of active sites is below or equal this number, the
 pipeline will not run for the current ligand. In the example given is 0
+
+
+This module takes as input the .csv files, which should have the following naming
+structure UniProtKB_database_server (e.g.: P15848_AF_scannet.csv,
+P15848_AF_psiver.csv). All .csv files corresponding to proteins should be placed in a
+folder named UniProtKB_database (e.g.: P15848_AF) inside the module's input folder.
