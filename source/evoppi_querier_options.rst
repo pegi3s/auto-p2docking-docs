@@ -152,12 +152,7 @@ For **Homo sapiens** the following options are available for these parameters (p
 
 - **evoppi_q_predmod**
 
-Homo sapiens Drosophila melanogaster (from Ensembl) (Modifiers_models_22)       Modifiers_models_22
-Homo sapiens Mus musculus (from DIOPT) (Modifiers_models_22)    Modifiers_models_22
-Homo sapiens Caenorhabditis elegans (from DIOPT) (Modifiers_models_22)  Modifiers_models_22
-Homo sapiens Mus musculus (from Ensembl) (Modifiers_models_22)  Modifiers_models_22
-Homo sapiens Caenorhabditis elegans (from Ensembl) (Modifiers_models_22)        Modifiers_models_22
-Homo sapiens Drosophila melanogaster (from DIOPT) (Modifiers_models_22) Modifiers_models_22
+"Homo sapiens Drosophila melanogaster (from Ensembl) (Modifiers_models_22)", "Homo sapiens Mus musculus (from DIOPT) (Modifiers_models_22)", "Homo sapiens Caenorhabditis elegans (from DIOPT) (Modifiers_models_22)", "Homo sapiens Mus musculus (from Ensembl) (Modifiers_models_22)", "Homo sapiens Caenorhabditis elegans (from Ensembl) (Modifiers_models_22)", "Homo sapiens Drosophila melanogaster (from DIOPT) (Modifiers_models_22)".
 
 - **evoppi_q_predpolyq**
 
