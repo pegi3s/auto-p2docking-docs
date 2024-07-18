@@ -87,8 +87,8 @@ FASTA file for each input file, containing all sequences showing a significant *
 geneid2uniprotkb
 -------
 This module allows getting the reference UniProtKB number associated with a
-given GeneID. It accepts a list of Gene IDs, one per line, and returns a list of UniprotKB
-from NCBI gene (https://www.ncbi.nlm.nih.gov/gene), one per line.
+given GeneID. It accepts a list of Gene IDs, one per line, and returns a list of UniprotKB numbers
+from NCBI gene (https://www.ncbi.nlm.nih.gov/gene), one per line. The input file must have the .gi extension.
 
 intersect
 -------
