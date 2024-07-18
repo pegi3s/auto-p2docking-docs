@@ -1,7 +1,7 @@
 Modules configuration
 *********************
 
-It should be noted that in all cases the project directory (``dir=``) must be declared.
+It should be noted that in all cases the project directory (``dir=``) and project name (``project=``) must be declared in the main auto-p2docking config file.
 
 Ligand selection
 *****
@@ -9,22 +9,28 @@ Ligand selection
 evoppi_querier
 -------
 This module allows you to retrieve GeneID lists from the EvoPPI databases (http://evoppi.i3s.up.pt). It takes as input a GeneID and returns from EvoPPI the corresponding list(s) of interactors, 
-as text files with one GeneID per line. The following parameters must be declared, one per line, in a file called config, which should be in the input folder of the module.
-Example:
-evoppi_q_species="Homo sapiens"
-evoppi_q_geneid=411
-evoppi_q_level=1
-evoppi_q_intdb="BioGRID; HIPPIE; Mentha; Mint; Pina2"
-evoppi_q_intmod="Homo sapiens (Modifiers_22)"
-evoppi_q_intpolyq="Homo sapiens (PolyQ_22)"
-evoppi_q_preddb="Based on Drosophila melanogaster BioGRID (DIOPT);
-Based on Drosophila melanogaster BioGRID (ENSEMBL)"
-evoppi_q_predmod=*
-evoppi_q_predpolyq="Homo sapiens Danio rerio (from DIOPT)
-(PolyQ_models_22)"
-evoppi_q_max_int=15
-Parameter description:
-- evoppi_q_species= indicate the name of the species of interest, that can
+as text files with one GeneID per line. The following parameters must be declared, one per line, in a config file, which must be in the input folder of the module:
+
+- evoppi_q_species=
+- evoppi_q_geneid=
+- evoppi_q_level=
+- evoppi_q_intdb=
+- evoppi_q_intmod=
+- evoppi_q_intpolyq=
+- evoppi_q_preddb=
+- evoppi_q_predmod=
+- evoppi_q_predpolyq=
+- evoppi_q_max_int=
+
+where:
+- evoppi_q_species indicates the name of the species of interest, for instance "Homo sapiens". The full list of
+available species can be obtained by invoking in the command 
+
+
+
+
+
+, that can
 be obtained with the following command: docker run --rm pegi3s/evoppiquerier
 list_species. In the example provided is: "Homo sapiens"
 - evoppi_q_geneid= indicate the GeneID for the gene that encodes the
@@ -114,25 +120,10 @@ human_prot_atlas
 This module allows retrieving lists of proteins encoded by genes expressed in a
 given tissue. It accepts as input a list with UniProtKb numbers, one per line, and returns
 a list of UniProtKb numbers, one per line, of those genes that are expressed in the
-specified tissue (see 1.3.1.2. The human Protein atlas). In the auto-p2docking
-configuration file, there are three parameters do be specified.
-Example:
-h_prot_atlas_inc=*
-h_prot_atlas_mode=
-h_prot_atlas_exc="Skin; Liver"
-Parameter description:
-- h_prot_atlas_inc= Specify the tissues to analyse, indicating a list of tissue
-names separated by ;, or * to analyse all available tissues (that is used by
-default).
-- h_prot_atlas_mode= you can select all proteins by writing union or those
-that are present in all selected tissues if you write intersection . If you do
-not provide information in this field, union is used by default. In the
-example provided is: "", union is used.
-- h_prot_atlas_exc= In the case of selecting all tissues (h_prot_atlas_inc=
-*) you can exclude a specific tissue by indicating it in the name of the
-tissue(s) to be excluded, separated by ;. In the example provided, Skin
-and Liver.
-The available tissues are: Brain_cerebral_cortex, Brain_hippocampal_formation,
+specified tissue. In the auto-p2docking configuration file, there are three parameters to be specified (one per line), namely: h_prot_atlas_inc=, h_prot_atlas_mode=, and h_prot_atlas_exc=
+
+- h_prot_atlas_inc: list of tissues to be considered, separated by ;, or * to analyse all available tissues (that is used by
+default). For instance, h_prot_atlas_inc="Brain_cerebral_cortex; Brain_hippocampal_formation". The list of available tissues are: Brain_cerebral_cortex, Brain_hippocampal_formation,
 Brain_amygdala, Brain_basal_ganglia, Brain_thalamus, Brain_hypothalamus,
 Brain_midbrain, Brain_cerebellum, Brain_pons, Brain_medulla_oblongata,
 Brain_spinal_cord, Brain_white_matter, Choroid_plexus, Salivary_gland, Esophagus,
@@ -142,3 +133,8 @@ Seminal_vesicles, Prostate, Epididymis, Testis, Gallbladder, Liver, Lymphoid_tis
 Bone_marrow, Lung, Pituitary_gland, Thyroid_gland, Parathyroid_gland,
 Adrenal_gland, Smooth_muscle, Heart, Retina.
 
+- h_prot_atlas_mode: you can select all proteins by writing union or only those
+that are present in all selected tissues if you write intersection . If you do
+not provide information in this field, union is used by default.
+
+- h_prot_atlas_exc: If h_prot_atlas_inc=* has been declared, you can exclude specific tissue(s) by indicating their name(s), separated by ;.
