@@ -4,10 +4,7 @@ Active and passive sites selection
 cport_like
 -------------
 
-This module.
-
-It uses code forked from the repository located at https://github.com/haddocking/cport, and this is the reason behind its name. The code allows to do the automated submission of PDB files to the  ⁠
-SCRIBER [82], SPPIDER [139], PSIVER [83], ISPRED4 [140] and ScanNet [170] servers.
+This module allows the identification of active and passive sites in protein sequences. It uses code forked from the repository located at https://github.com/haddocking/cport, and this is the reason behind its name. The code allows to do the automated submission of PDB files to the SCRIBER (http://biomine.cs.vcu.edu/servers/SCRIBER/), SPPIDER (https://sppider.cchmc.org/), PSIVER (https://psiver.mizuguchilab.org/PSIVER/), ISPRED4 (https://ispred4.biocomp.unibo.it/welcome/default/index) and ScanNet (http://bioinfo3d.cs.tau.ac.il/ScanNet/) servers.
 
 
 Example:
