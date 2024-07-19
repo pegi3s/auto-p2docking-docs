@@ -5,7 +5,7 @@ What is auto-p2docking v1?
 
 It uses Docker images to run third-party software, and thus, Docker must be installed (see how to install Docker at https://pegi3s.github.io/dockerfiles/). Please note that, due to copyright issues, some Docker images must be build according to the instructions given in the pegi3S Bioinformatics Docker Images Project (https://pegi3s.github.io/dockerfiles/) for haddock24-builder, hdock-builder, and pydock3-builder. If such Docker images are not build according to the provided instructions, the corresponding modules that use them will not run (haddock, hdock, and pydock_ftdock, respectively).
 
-This manual will be updated when new modules, protocols, or features are added to auto-p2docking, as long as the changes are backwards-compatible. Therefore, it may describe modules, protocols or features that are not present in earlier versions.
+**This manual will be updated when new modules, protocols, or features are added to auto-p2docking, as long as the changes are backwards-compatible. Therefore, it may describe modules, protocols or features that are not present in earlier versions.**
 
 .. _how-to-run:
 
