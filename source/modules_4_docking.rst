@@ -15,9 +15,7 @@ haddock
 --------
 
 This module allows the use of HADDOCK, an information-driven flexible docking
-approach that accurately models the 3D structure of macromolecular complexes. This module takes a total of 6 files as input: two protein .pdb files,
-two active site files (one for each protein) and two passive site files (one for each protein).
-All 6 files must be placed in the input folder of the module. It returns the .pdb of the docking
+approach that accurately models the 3D structure of macromolecular complexes. It returns the PDBs of the docking
 protein complexes with a z-score less than or equal to 0. The complexes clusters
 resulting from all possible predicted dockings are scored based on a statistic called the
 z-score. The z-score represents how many standard deviations the HADDOCK score of
