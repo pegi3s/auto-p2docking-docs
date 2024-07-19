@@ -28,8 +28,7 @@ haddock_all_files=n
 Parameter description:
 - haddock_all_files= If the user wants to see all the files created during the
 docking process set this parameter to y (yes), if the user only wants to
-see the most important files, set this parameter to n (no). In the example
-given is n
+see the most important files, set this parameter to n (no).
 
 This module takes as input the .pdb files of the ligand and receptor, which should
 have the following naming structure UniProtKB_database (e.g. P15848_AF.pdb). It also
