@@ -4,7 +4,7 @@ Active and passive sites selection
 cport_like
 -------------
 
-This module allows the identification of active and passive sites in protein sequences. It uses code forked from the repository located at https://github.com/haddocking/cport, and this is the reason behind its name. The code allows to do the automated submission of PDB files to the SCRIBER (http://biomine.cs.vcu.edu/servers/SCRIBER/), SPPIDER (https://sppider.cchmc.org/), PSIVER (https://psiver.mizuguchilab.org/PSIVER/), ISPRED4 (https://ispred4.biocomp.unibo.it/welcome/default/index) and ScanNet (http://bioinfo3d.cs.tau.ac.il/ScanNet/) servers.
+This module allows the identification of active and passive sites in protein sequences. It uses code forked from the repository located at https://github.com/haddocking/cport, and this is the reason behind its name. The code allows to do the automated submission of PDB files to the SCRIBER (http://biomine.cs.vcu.edu/servers/SCRIBER/), SPPIDER (https://sppider.cchmc.org/), PSIVER (https://psiver.mizuguchilab.org/PSIVER/), ISPRED4 (https://ispred4.biocomp.unibo.it/welcome/default/index) and ScanNet (http://bioinfo3d.cs.tau.ac.il/ScanNet/) servers. Being webservers, it is important to configure the number of retries and time between retries to reasonable numbers, depending on how busy the servers are at a given moment. This can be done using the parameters ending in nr (number of retries; cport_scribernr=, cport_spiddernr=, cport_psivernr=, cport_ispred4nr=, cport_scannetnr=) and wi (waiting time; ) to be declared in a config file located in the module´s input folder.
 
 
 Example:
