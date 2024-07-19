@@ -98,28 +98,4 @@ In intermediate files, active sites are labelled as 1, passive sites as 2, and u
 
 If the number of active sites is lower than that specified in consensus_active_min_number then the method that shows the highest number of 1 is chosen to create the list of active
 and passive sites. If, as the result of this operation, there are more active sites than the number specified in consensus_active_max_number, the below conditions are applied as well.
-If in the consensus there are more active sites than the ones specified in consensus_active_max_number, then a new consensus is calculated based on two methods only (those specified in consensus_preferred_1 and consensus_preferred_2). If this option still produces more active sites than the number specified in consensus_active_max_number, then, if there are two consecutive active sites, the second one is not considered. If this procedure still produces more active sites than the ones specified in consensus_active_max_number, then a random set of active sites is chosen from the consensus produced in the previous step, to fulfil the condition imposed by consensus_active_max_number. It should be noted that if the conditions imposed by consensus_active_min_number and consensus_active_max_number are not met based on the original consensus procedure, and if the cport_like and consensus modules are invocated again in the pipeline, the whole procedure will be repeated based on the previous methods plus the new ones. If the condition is, however, met, no action is taken when invoking again the cport_like and consensus modules. If there are fewer active sites than the ones specified in consensus_critical_active_number, then, the ligand being processed is no longer considered when running the remaining modules of the pipeline.
-
-Example:
-consensus_preferred_1=psiver.csv
-consensus_preferred_2=scriber.csv
-consensus_active_max_number=150
-consensus_active_min_number= 10
-consensus_critical_active_number=0
-Parameter description:
-- consensus_preferred_1= specify the first preferred method to use when
-the number of active sites is above the maximum number. In the example
-given is psiver.csv
-- consensus_preferred_2= specify the second preferred method to use
-when the number of active sites is above the maximum number. In the
-example given is scriber.csv
-- consensus_active_max_number= indicate the maximum number of
-active sites. In the example given is 150
-- consensus_active_min_number= indicate the minimal number of active
-sites. In the example given is 10
-- consensus_critical_active_number= indicate the critical number of active
-sites. If the number of active sites is below or equal this number, the
-pipeline will not run for the current ligand. In the example given is 0
-
-
-
+If in the consensus there are more active sites than the ones specified in consensus_active_max_number, then a new consensus is calculated based on two methods only (those specified in consensus_preferred_1 and consensus_preferred_2 in two different lines of the config file, for instance: consensus_preferred_1=psiver.csv and consensus_preferred_2=scriber.csv). If this option still produces more active sites than the number specified in consensus_active_max_number, then, if there are two consecutive active sites, the second one is not considered. If this procedure still produces more active sites than the ones specified in consensus_active_max_number, then a random set of active sites is chosen from the consensus produced in the previous step, to fulfil the condition imposed by consensus_active_max_number. It should be noted that if the conditions imposed by consensus_active_min_number and consensus_active_max_number are not met based on the original consensus procedure, and if the cport_like and consensus modules are invocated again in the pipeline, the whole procedure will be repeated based on the previous methods plus the new ones. If the condition is, however, met, no action is taken when invoking again the cport_like and consensus modules. If there are fewer active sites than the ones specified in consensus_critical_active_number, then, the ligand being processed is no longer considered when running the remaining modules of the pipeline.
