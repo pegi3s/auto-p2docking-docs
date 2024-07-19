@@ -4,74 +4,23 @@ Active and passive sites selection
 cport_like
 -------------
 
-This module allows the identification of active and passive sites in protein sequences. It uses code forked from the repository located at https://github.com/haddocking/cport, and this is the reason behind its name. The code allows to do the automated submission of PDB files to the SCRIBER (http://biomine.cs.vcu.edu/servers/SCRIBER/), SPPIDER (https://sppider.cchmc.org/), PSIVER (https://psiver.mizuguchilab.org/PSIVER/), ISPRED4 (https://ispred4.biocomp.unibo.it/welcome/default/index) and ScanNet (http://bioinfo3d.cs.tau.ac.il/ScanNet/) servers. Being webservers, it is important to configure the number of retries and time between retries to reasonable numbers, depending on how busy the servers are at a given moment. This can be done using the parameters ending in nr (number of retries; cport_scribernr=, cport_spiddernr=, cport_psivernr=, cport_ispred4nr=, cport_scannetnr=) and wi (waiting time; cport_scriberwi=, cport_spidderwi=, cport_psiverwi=, cport_ispred4wi=, cport_scannetwi=) to be declared in a config file located in the module´s input folder. The methods to be used are declared in the cport_methods parameter separated by whyte spaces around quotation marks (for instance, cport_methods="sppider scannet"). The cport_receptor parameter accepts two values (y/n). If cport_receptor=y then the methodology is also applied to the receptor protein. If cport_receptor=n active and passive sites must be provided for the receptor, since the methodology will not be applied to the receptor.
+This module allows the identification of active and passive sites in protein sequences. It uses code forked from the repository located at https://github.com/haddocking/cport, and this is the reason behind its name. The code allows to do the automated submission of PDB files to the SCRIBER (http://biomine.cs.vcu.edu/servers/SCRIBER/), SPPIDER (https://sppider.cchmc.org/), PSIVER (https://psiver.mizuguchilab.org/PSIVER/), ISPRED4 (https://ispred4.biocomp.unibo.it/welcome/default/index) and ScanNet (http://bioinfo3d.cs.tau.ac.il/ScanNet/) servers. Being webservers, it is important to configure the number of retries and time between retries to reasonable numbers, depending on how busy the servers are at a given moment. This can be done using the parameters ending in nr (number of retries; cport_scribernr=, cport_spiddernr=, cport_psivernr=, cport_ispred4nr=, cport_scannetnr=) and wi (waiting time; cport_scriberwi=, cport_spidderwi=, cport_psiverwi=, cport_ispred4wi=, cport_scannetwi=). The methods to be used are declared in the cport_methods parameter separated by whyte spaces around quotation marks (for instance, cport_methods="sppider scannet"). **In contrast to the other modules, the config file where these parameters are to be declared, must be located in the module´s input folder.** The cport_exclude parameter specifies what to exclude from the analysis. If it is equal to "ligands", the active and passive sites will be calculated only for the receptor, and vice versa. If it is empty, both ligands and receptor will be analyzed. **This parameter is declared in the global config file.** To create the active (1), passive (2) and undetermined (0) categories the following rules are used:
 
-
-Example:
-
-cport_receptor=y
-
-cport_exclude=receptor
-Parameter description:
-- cport_methods= Specifies the servers to use in cport_like module. In the
-example given are "sppider scannet"
-
-- cport_psiverwi= wait time (in seconds) between retries to the PSIVER
-server. In the example given is 3600
-- cport_psivernr= number of retries to the PSIVER server. In the example
-given is 1000
-- cport_ispred4wi= wait time (in seconds) between retries to the ISPRED4
-server. In the example given is 3600
-- cport_ispred4nr= number of retries to the ISPRED4 server. In the
-example given is 1000
-- cport_scriberwi= wait time (in seconds) between retries to the SCRIBER
-server. In the example given is 60
-- cport_scribernr= number of retries to the SCRIBER server. In the example
-given is 30
-- cport_spidderwi= wait time (in seconds) between retries to the SPIDDER
-server. In the example given is 60
-- cport_spiddernr= number of retries to the SPIDDER server. In the
-example given is 30
-- cport_scannetwi= wait time (in seconds) between retries to the ScanNet
-server. In the example given is 60
-- cport_scannetnr= number of retries to the ScanNet server. In the example
-given is 30
-- cport_exclude= Specifies what to exclude from the analysis. If it's equal
-to "ligands", the active and passive sites will be calculated only for the
-receptor, and vice versa. If it's empty, both ligands and receptor will be
-calculated. In the example given is "receptor"
-Note 1: all these parameters must be in an independent config file inside the
-cport_like input folder. The only parameter that needs to be placed in the global config
-file it’s “cport_exclude=”.
-Note 2: To create the 'cat' (categories) files the following rules were used (0,1
-and 2 means undetermined, active and passive sites, respectively) :
 - ISPRED4: values equal or above '0.5' are replaced by '1', less than '0.5'
 are replaced by '2', and '-' are replaced by '0'.
 - SCRIBER: values equal or above '0.5' are replaced by '1', below '0.27' are
 replaced by '2', and in between '0.27' (including) and '0.5' by '0'. Missing
 positions are replaced by '0'.
-- SPPIDER: 'A' has been replaced by '1' and '-' by '0'.
+- SPPIDER: 'A' are replaced by '1' and '-' by '0'.
 - PSIVER: values equal or above '0.5' are replaced by '1', equal or less than
 '0.37' are replaced by '2', and in between '0.37' and '0.5' by '0'. Missing
 positions are replaced by '0'.
 - ScanNet: values equal or above '0.5' are replaced by '1', equal or less
 than '0.35' are replaced by '2', and in between '0,35' and '0.5' by '0'.
 Missing positions are replaced by '0'.
-Note 3: If this module is used alone in a single module pipeline, it's necessary to
-use the copy module to copy all the necessary PDBs. For example, if the user wishes to
-calculate the active and passive sites for a ligand and a receptor, the respective PDBs
-must be in different input folders in the working_dir. The copy module should then be
-used to copy the files to PDBs/ligand and PDBs/receptor respectively. Like the following
-example, where the pdb file for the ligand it’s in input1, the pdb for the receptor it’s in
-input2 and the config file it’s in input3.
-Example
-copy input1 PDBs/Ligands
-copy input2 PDBs/Receptor
-cport_like input3 output1
 
-
-The files must have the following
-UniProtKB_database name structure (e.g.: P59665_AF.pdb, P15848_ditasser.pdb).
+It should be noted that, if this module is used alone in a single module pipeline, it's necessary to use the copy module to copy all the necessary PDBs to the right place. For example, if the user wishes to
+calculate the active and passive sites for a ligand and a receptor, the respective PDBs must be in different input folders in the working_dir. The copy module should then be used to copy the files to PDBs/ligand and PDBs/receptor respectively. The PDB files must have the following UniProtKB_database name structure (for instance, P59665_AF.pdb, P15848_ditasser.pdb).
 
 
 consensus
