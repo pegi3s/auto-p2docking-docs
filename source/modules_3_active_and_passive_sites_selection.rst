@@ -8,13 +8,17 @@ This module allows the identification of active and passive sites in protein seq
 
 - ISPRED4: values equal or above '0.5' are replaced by '1', less than '0.5'
 are replaced by '2', and '-' are replaced by '0'.
+
 - SCRIBER: values equal or above '0.5' are replaced by '1', below '0.27' are
 replaced by '2', and in between '0.27' (including) and '0.5' by '0'. Missing
 positions are replaced by '0'.
+
 - SPPIDER: 'A' are replaced by '1' and '-' by '0'.
+
 - PSIVER: values equal or above '0.5' are replaced by '1', equal or less than
 '0.37' are replaced by '2', and in between '0.37' and '0.5' by '0'. Missing
 positions are replaced by '0'.
+
 - ScanNet: values equal or above '0.5' are replaced by '1', equal or less
 than '0.35' are replaced by '2', and in between '0,35' and '0.5' by '0'.
 Missing positions are replaced by '0'.
