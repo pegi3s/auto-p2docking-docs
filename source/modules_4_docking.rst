@@ -25,13 +25,13 @@ a given cluster is from the mean of all clusters obtained, the lower the z-score
 the predictions. If the user wants to see all the files created during the
 docking process he/she can set the parameter haddock_all_files to y, if the user only wants to
 see the most important files, he/she can set this parameter to n. The ligand and receptor PDB files should
-have the following name structure: UniProtKB_database (e.g. P15848_AF.pdb). It also
+have the following name structure: UniProtKB_database (for instance, P15848_AF.pdb). It also
 uses the active and passive sites of each protein, which must have the following name
 structure: UniProtKB_database_active.sites and UniProtKB_database_passive.sites
-(e.g.: P15848_AF_active.sites.csv, P15848_AF_passive.sites.csv). The active and
-passive sites must be placed in a folder named UniProtKB_database (e.g.: P15848_AF)
+(for instance, P15848_AF_active.sites.csv, P15848_AF_passive.sites.csv). The active and
+passive sites must be placed in a folder named UniProtKB_database (for instance, P15848_AF)
 within the module's input folder. The module expects the .pdb files of the corresponding
-protein to be placed in the PDBs/Ligands and PDBs/Receptor folders.
+proteins to be placed in the PDBs/Ligands and PDBs/Receptor folders.
 
 pydock_ftdock
 --------
