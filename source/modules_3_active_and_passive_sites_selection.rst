@@ -4,28 +4,18 @@ Active and passive sites selection
 cport_like
 -------------
 
-This module allows the identification of active and passive sites in protein sequences. It uses code forked from the repository located at https://github.com/haddocking/cport, and this is the reason behind its name. The code allows to do the automated submission of PDB files to the SCRIBER (http://biomine.cs.vcu.edu/servers/SCRIBER/), SPPIDER (https://sppider.cchmc.org/), PSIVER (https://psiver.mizuguchilab.org/PSIVER/), ISPRED4 (https://ispred4.biocomp.unibo.it/welcome/default/index) and ScanNet (http://bioinfo3d.cs.tau.ac.il/ScanNet/) servers. Being webservers, it is important to configure the number of retries and time between retries to reasonable numbers, depending on how busy the servers are at a given moment. This can be done using the parameters ending in nr (number of retries; cport_scribernr=, cport_spiddernr=, cport_psivernr=, cport_ispred4nr=, cport_scannetnr=) and wi (waiting time; ) to be declared in a config file located in the module´s input folder.
+This module allows the identification of active and passive sites in protein sequences. It uses code forked from the repository located at https://github.com/haddocking/cport, and this is the reason behind its name. The code allows to do the automated submission of PDB files to the SCRIBER (http://biomine.cs.vcu.edu/servers/SCRIBER/), SPPIDER (https://sppider.cchmc.org/), PSIVER (https://psiver.mizuguchilab.org/PSIVER/), ISPRED4 (https://ispred4.biocomp.unibo.it/welcome/default/index) and ScanNet (http://bioinfo3d.cs.tau.ac.il/ScanNet/) servers. Being webservers, it is important to configure the number of retries and time between retries to reasonable numbers, depending on how busy the servers are at a given moment. This can be done using the parameters ending in nr (number of retries; cport_scribernr=, cport_spiddernr=, cport_psivernr=, cport_ispred4nr=, cport_scannetnr=) and wi (waiting time; cport_scriberwi=, cport_spidderwi=, cport_psiverwi=, cport_ispred4wi=, cport_scannetwi=) to be declared in a config file located in the module´s input folder. The methods to be used are declared in the cport_methods parameter separated by whyte spaces around quotation marks (for instance, cport_methods="sppider scannet"). The cport_receptor parameter accepts two values (y/n). If cport_receptor=y then the methodology is also applied to the receptor protein. If cport_receptor=n active and passive sites must be provided for the receptor, since the methodology will not be applied to the receptor.
 
 
 Example:
-cport_methods="sppider scannet"
+
 cport_receptor=y
-cport_psiverwi= 3600
-cport_psivernr=1000
-cport_ispred4wi=3600
-cport_ispred4nr=1000
-cport_scriberwi=60
-cport_scribernr=30
-cport_spidderwi=60
-cport_spiddernr=30
-cport_scannetwi=60
-cport_scannetnr=30
+
 cport_exclude=receptor
 Parameter description:
 - cport_methods= Specifies the servers to use in cport_like module. In the
 example given are "sppider scannet"
-- cport_receptor=y the methodology is also applied to the receptor protein.
-If not (n) active and passive sites must be declared.
+
 - cport_psiverwi= wait time (in seconds) between retries to the PSIVER
 server. In the example given is 3600
 - cport_psivernr= number of retries to the PSIVER server. In the example
