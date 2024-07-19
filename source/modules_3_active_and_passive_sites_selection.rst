@@ -4,11 +4,12 @@ Active and passive sites selection
 cport_like
 -------------
 
-This module uses a similar process to CPORT’s algorithm [84] to retrieve active
-and passive sites for each protein from different servers. The user can choose what
-servers to use, the available options are SCRIBER [82], SPPIDER [139], PSIVER [83],
-ISPRED4 [140] and ScanNet [170] (for details see 1.3.4 Prediction of protein Interface
-Residues).
+This module.
+
+It uses code forked from the repository located at https://github.com/haddocking/cport, and this is the reason behind its name. The code allows to do the automated submission of PDB files to the  ⁠
+SCRIBER [82], SPPIDER [139], PSIVER [83], ISPRED4 [140] and ScanNet [170] servers.
+
+
 Example:
 cport_methods="sppider scannet"
 cport_receptor=y
