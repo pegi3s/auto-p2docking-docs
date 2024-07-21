@@ -8,7 +8,7 @@ Welcome to the Auto-p2docking v1 manual!
    overview
    version_customization
    script
-   test_data
+   protocols
    pipeliner
 
 .. toctree::
