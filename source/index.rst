@@ -21,6 +21,7 @@ Welcome to the Auto-p2docking v1 manual!
    modules_4_docking
    modules_5_surface_extraction
    modules_6_data_analysis_and_visualization
+   modules_7_special
 
 .. toctree::
    :maxdepth: 2
