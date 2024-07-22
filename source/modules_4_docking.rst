@@ -20,7 +20,7 @@ resulting from all possible predicted dockings are scored based on a statistic c
 z-score. The z-score represents how many standard deviations the HADDOCK score of
 a given cluster is from the mean of all clusters obtained, the lower the z-score, the better
 the predictions. If the user wants to see all the files created during the
-docking process he/she can set the parameter haddock_all_files to y, if the user only wants to
+docking process he/she can set the parameter ``haddock_all_files`` to y, if the user only wants to
 see the most important files, he/she can set this parameter to n. The ligand and receptor PDB files should
 have the following name structure: UniProtKB_database (for instance, P15848_AF.pdb). It also
 uses the active and passive sites of each protein, which must have the following name
@@ -34,8 +34,8 @@ pydock_ftdock
 --------
 
 This module facilitates the use of the Ftdock software as implemented in the pydock software (see the pydock3-builder Docker image at https://hub.docker.com/r/pegi3s/pydock3-builder). It returns the PDBs of
-the docking protein complexes with the highest score. The parameter pydock_ftdock_number_of_solutions specifies the number of solutions to
-analyze, this number must be less than or equal to 10000 (recommended: 100). The parameter pydock_ftdock_best_pdb specifies the number of best solutions
+the docking protein complexes with the highest score. The parameter ``pydock_ftdock_number_of_solutions`` specifies the number of solutions to
+analyze, this number must be less than or equal to 10000 (recommended: 100). The parameter ``pydock_ftdock_best_pdb`` specifies the number of best solutions
 (recommended: 5). The .pdb files of the ligands and receptor, must
 have the following name structure: UniProtKB_database (for instance, P15848_AF.pdb). Ftdock also
 uses active and passive sites for each protein, which must have the following name
