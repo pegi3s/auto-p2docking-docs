@@ -15,11 +15,11 @@ get_pattern
 This module takes as input the table created by the tabulate module and returns a file named pattern_regions.txt with the pattern positions for structure 1 according to the
 rule and the cutoff value specified in the auto-p2docking configuration file, that may look like this:
 
-pattern_cutoff=50
+``pattern_cutoff=50``
 
-pattern=“111[01]1”
+``pattern=“111[01]1”``
 
-where pattern_cutoff is the value (in percentage) above which the site is assigned as "1" in the rule pattern (in the example given is 50%), and pattern
+where ``pattern_cutoff`` is the value (in percentage) above which the site is assigned as "1" in the rule pattern (in the example given is 50%), and ``pattern``
 is a regular expression (pattern rule). In this example is “111[01]1”, which means that a pattern region is defined as a sequence of at least three consecutive sites with
 more than 50% frequency, followed by a site that may have more or less than 50% frequency, if followed by another site with more than 50% frequency.
 
