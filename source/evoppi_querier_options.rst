@@ -3,7 +3,7 @@ evoppi_querier options
 
 **Species**
 
-The following species are available for the `evoppi_q_species` parameter. Please note, that you should copy the quotation marks.
+The following species are available for the ``evoppi_q_species`` parameter. Please note, that you should copy the quotation marks.
 
 - "Bos taurus"
 - "Caenorhabditis elegans"
