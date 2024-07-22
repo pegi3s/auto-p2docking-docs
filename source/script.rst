@@ -24,14 +24,15 @@ The following figure shows the basic structure of an auto-phylo script.
 
 Where:
 
-1. Command lines required by all auto-phylo scripts.
-2. Required if using SEDA-CLI operations ([1]; https://hub.docker.com/r/pegi3s/seda/).
-3. Informative message.
-4. Creates the directory where the result of the operation listed below will be saved. Do not forget to declare the ``$prefix`` variable.
-5. The name of the SEDA-CLI operation being invoked must be declared after ``$start`` (in the example, the rename-header-replace-word operation).
-6. The input directory of the first operation must be ``/data/$input_dir`` (the variable ``$input_dir`` captures the name of the input directory declared in the pipeline file).
-7. The name of the output directory of the first operation, that should be, in case the pipeline is not branched, the input directory of the second operation.
-8. The parameters of the specified operation. Variables defined in the config file can be used, by invoking ``$variable_name``.
-9. Instruction to hide the output usually shown in the console.
-10. Creates the output directory specified in the pipeline file.
-11. Copies the relevant output to the output directory specified in the pipeline file (in this case by invoking the wildcard \*, we are assuming that all files are relevant).
+1. Command lines required by all auto-p2docking scripts.
+2. Lines required for version control.
+3. Lines required for changing the default Docker images versions.
+4. Informative message.
+5. Creates the directory where the result of the operation listed below will be saved. Do not forget to declare the ``$prefix`` variable.
+6. Instructions regarding the module´s function.
+7. The input directory of the first operation must be ``/data/$input_dir`` (the variable ``$input_dir`` captures the name of the input directory declared in the pipeline file).
+8. The name of the output directory of the first operation, that should be, in case the pipeline is not branched, the input directory of the second operation.
+9. The parameters of the specified operation. Variables defined in the config file can be used, by invoking ``$variable_name``.
+10. Instruction to hide the output usually shown in the console.
+11. Creates the output directory specified in the pipeline file.
+12. Copies the relevant output to the output directory specified in the pipeline file (in this case by invoking the wildcard \*, we are assuming that all files are relevant).
