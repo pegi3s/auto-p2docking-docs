@@ -21,6 +21,7 @@ For EvoPPI database details please see https://link.springer.com/article/10.1007
 **For the following parameters, please note, that you should copy the quotation marks. If multiple databases are to be declared they must be separated by ";" (for instance, "BioGRID;HINT binary_all")**
 
 For **Bos taurus** the following options are available:
+-------
 
 - **evoppi_q_intdb**
 
