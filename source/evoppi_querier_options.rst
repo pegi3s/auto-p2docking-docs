@@ -189,11 +189,11 @@ For **Mus musculus** the following options are available:
 
 - **evoppi_q_predmod**
 
-"Homo sapiens (from Ensembl) Mus musculus (Modifiers_models_22)", "Homo sapiens (from DIOPT) Mus musculus (Modifiers_models_22)"
+"Homo sapiens Mus musculus (from Ensembl) (Modifiers_models_22)", "Homo sapiens Mus musculus (from DIOPT) (Modifiers_models_22)"
 
 - **evoppi_q_predpolyq**
 
-"Homo sapiens (from Ensembl) Mus musculus (PolyQ_models_22)", "Homo sapiens (from DIOPT) Mus musculus (PolyQ_models_22)"
+"Homo sapiens Mus musculus (from Ensembl) (PolyQ_models_22)", "Homo sapiens Mus musculus (from DIOPT) (PolyQ_models_22)"
 
 For **Oryctolagus cuniculus** the following options are available:
 -------
