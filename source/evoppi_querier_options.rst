@@ -3,7 +3,7 @@ evoppi_querier options
 
 **Species**
 
-The following species are available for the ``evoppi_q_species`` parameter. Please note, that you should copy the quotation marks.
+The following species are available for the ``evoppi_q_species`` parameter. **Please note, that you should copy the quotation marks.**
 
 - "Bos taurus"
 - "Caenorhabditis elegans"
@@ -18,7 +18,9 @@ The following species are available for the ``evoppi_q_species`` parameter. Plea
 
 For EvoPPI database details please see https://link.springer.com/article/10.1007/s12539-019-00317-y and https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10561075/
 
-For **Bos taurus** the following options are available for these parameters (please note, that you should copy the quotation marks. If multiple databases are to be declared they must be separated by ";" (for instance, "BioGRID;HINT binary_all"):
+**For the following parameters, please note, that you should copy the quotation marks. If multiple databases are to be declared they must be separated by ";" (for instance, "BioGRID;HINT binary_all")**
+
+For **Bos taurus** the following options are available:
 
 - **evoppi_q_intdb**
 
@@ -36,7 +38,7 @@ For **Bos taurus** the following options are available for these parameters (ple
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For **Caenorhabditis elegans** the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Caenorhabditis elegans** the following options are available:
 
 - **evoppi_q_intdb**
 
@@ -62,7 +64,7 @@ For **Caenorhabditis elegans** the following options are available for these par
 
 "Homo sapiens (from DIOPT) Caenorhabditis elegans (PolyQ_models_22)"
 
-For **Danio rerio** the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Danio rerio** the following options are available:
 
 - **evoppi_q_intdb**
 
@@ -88,7 +90,7 @@ For **Danio rerio** the following options are available for these parameters (pl
 
 "Homo sapiens (from DIOPT) Danio rerio (PolyQ_models_22)", "Homo sapiens (from Ensembl) Danio rerio (PolyQ_models_22)"
 
-For **Drosophila melanogaster** the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Drosophila melanogaster** the following options are available:
 
 - **evoppi_q_intdb**
 
@@ -114,7 +116,7 @@ For **Drosophila melanogaster** the following options are available for these pa
 
 "Curated Homo sapiens ATXN1 (from Ensembl) Drosophila melanogaster (PolyQ_models_22)", "Homo sapiens (from DIOPT) Drosophila melanogaster (PolyQ_models_22)", "Curated Homo sapiens ATXN1 (from DIOPT) Drosophila melanogaster (PolyQ_models_22)"
 
-For **Gallus gallus** the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Gallus gallus** the following options are available:
 
 - **evoppi_q_intdb**
 
@@ -158,7 +160,7 @@ For **Homo sapiens** the following options are available for these parameters (p
 
 "Homo sapiens Danio rerio (from Ensembl) (PolyQ_models_22)", "Curated Homo sapiens ATXN1 Drosophila melanogaster (from Ensembl) (PolyQ_models_22)", "Homo sapiens Drosophila melanogaster (from Ensembl) (PolyQ_models_22)", "Homo sapiens Mus musculus (from DIOPT) (PolyQ_models_22)", "Homo sapiens Caenorhabditis elegans (from DIOPT) (PolyQ_models_22)", "Homo sapiens Mus musculus (from Ensembl) (PolyQ_models_22)", "Curated Homo sapiens ATXN1 Drosophila melanogaster (from DIOPT) (PolyQ_models_22)", "Homo sapiens Caenorhabditis elegans (from Ensembl) (PolyQ_models_22)", "Homo sapiens Danio rerio (from DIOPT) (PolyQ_models_22)", "Homo sapiens Drosophila melanogaster (from DIOPT) (PolyQ_models_22)"
 
-For **Mus musculus** the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Mus musculus** the following options are available:
 
 - **evoppi_q_intdb**
 
@@ -186,7 +188,7 @@ For **Mus musculus** the following options are available for these parameters (p
 
 "Homo sapiens (from Ensembl) Mus musculus (PolyQ_models_22)", "Homo sapiens (from DIOPT) Mus musculus (PolyQ_models_22)"
 
-For **Oryctolagus cuniculus** the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Oryctolagus cuniculus** the following options are available:
 
 - **evoppi_q_intdb**
 
@@ -204,7 +206,7 @@ For **Oryctolagus cuniculus** the following options are available for these para
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For **Rattus norvegicus** the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Rattus norvegicus** the following options are available:
 
 - **evoppi_q_intdb**
 
@@ -222,7 +224,7 @@ For **Rattus norvegicus** the following options are available for these paramete
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For **Xenopus laevis** the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Xenopus laevis** the following options are available:
 
 - **evoppi_q_intdb**
 
