@@ -60,11 +60,11 @@ For **Caenorhabditis elegans** the following options are available:
 
 - **evoppi_q_predmod**
 
-"Homo sapiens (from DIOPT) Caenorhabditis elegans (Modifiers_models_22)"
+"Homo sapiens Caenorhabditis elegans (from DIOPT) (Modifiers_models_22)"
 
 - **evoppi_q_predpolyq**
 
-"Homo sapiens (from DIOPT) Caenorhabditis elegans (PolyQ_models_22)"
+"Homo sapiens Caenorhabditis elegans (from DIOPT) (PolyQ_models_22)"
 
 For **Danio rerio** the following options are available:
 -------
@@ -91,7 +91,7 @@ For **Danio rerio** the following options are available:
 
 - **evoppi_q_predpolyq**
 
-"Homo sapiens (from DIOPT) Danio rerio (PolyQ_models_22)", "Homo sapiens (from Ensembl) Danio rerio (PolyQ_models_22)"
+"Homo sapiens Danio rerio (from DIOPT) (PolyQ_models_22)", "Homo sapiens Danio rerio (from Ensembl) (PolyQ_models_22)"
 
 For **Drosophila melanogaster** the following options are available:
 -------
@@ -114,7 +114,7 @@ For **Drosophila melanogaster** the following options are available:
 
 - **evoppi_q_predmod**
 
-"Homo sapiens (from Ensembl) Drosophila melanogaster (Modifiers_models_22)", "Homo sapiens (from DIOPT) Drosophila melanogaster (Modifiers_models_22)"
+"Homo sapiens Drosophila melanogaster (from Ensembl) (Modifiers_models_22)", "Homo sapiens Drosophila melanogaster (from DIOPT) (Modifiers_models_22)"
 
 - **evoppi_q_predpolyq**
 
