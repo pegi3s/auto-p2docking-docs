@@ -40,6 +40,7 @@ For **Bos taurus** the following options are available:
 - **evoppi_q_predpolyq**
 
 For **Caenorhabditis elegans** the following options are available:
+-------
 
 - **evoppi_q_intdb**
 
@@ -66,6 +67,7 @@ For **Caenorhabditis elegans** the following options are available:
 "Homo sapiens (from DIOPT) Caenorhabditis elegans (PolyQ_models_22)"
 
 For **Danio rerio** the following options are available:
+-------
 
 - **evoppi_q_intdb**
 
@@ -92,6 +94,7 @@ For **Danio rerio** the following options are available:
 "Homo sapiens (from DIOPT) Danio rerio (PolyQ_models_22)", "Homo sapiens (from Ensembl) Danio rerio (PolyQ_models_22)"
 
 For **Drosophila melanogaster** the following options are available:
+-------
 
 - **evoppi_q_intdb**
 
@@ -118,6 +121,7 @@ For **Drosophila melanogaster** the following options are available:
 "Curated Homo sapiens ATXN1 (from Ensembl) Drosophila melanogaster (PolyQ_models_22)", "Homo sapiens (from DIOPT) Drosophila melanogaster (PolyQ_models_22)", "Curated Homo sapiens ATXN1 (from DIOPT) Drosophila melanogaster (PolyQ_models_22)"
 
 For **Gallus gallus** the following options are available:
+-------
 
 - **evoppi_q_intdb**
 
@@ -135,7 +139,8 @@ BioGRID
 - **evoppi_q_predmod**
 - **evoppi_q_predpolyq**
 
-For **Homo sapiens** the following options are available for these parameters (please note, that you should copy the quotation marks):
+For **Homo sapiens** the following options are available:
+-------
 
 - **evoppi_q_intdb**
 
@@ -162,6 +167,7 @@ For **Homo sapiens** the following options are available for these parameters (p
 "Homo sapiens Danio rerio (from Ensembl) (PolyQ_models_22)", "Curated Homo sapiens ATXN1 Drosophila melanogaster (from Ensembl) (PolyQ_models_22)", "Homo sapiens Drosophila melanogaster (from Ensembl) (PolyQ_models_22)", "Homo sapiens Mus musculus (from DIOPT) (PolyQ_models_22)", "Homo sapiens Caenorhabditis elegans (from DIOPT) (PolyQ_models_22)", "Homo sapiens Mus musculus (from Ensembl) (PolyQ_models_22)", "Curated Homo sapiens ATXN1 Drosophila melanogaster (from DIOPT) (PolyQ_models_22)", "Homo sapiens Caenorhabditis elegans (from Ensembl) (PolyQ_models_22)", "Homo sapiens Danio rerio (from DIOPT) (PolyQ_models_22)", "Homo sapiens Drosophila melanogaster (from DIOPT) (PolyQ_models_22)"
 
 For **Mus musculus** the following options are available:
+-------
 
 - **evoppi_q_intdb**
 
@@ -190,6 +196,7 @@ For **Mus musculus** the following options are available:
 "Homo sapiens (from Ensembl) Mus musculus (PolyQ_models_22)", "Homo sapiens (from DIOPT) Mus musculus (PolyQ_models_22)"
 
 For **Oryctolagus cuniculus** the following options are available:
+-------
 
 - **evoppi_q_intdb**
 
@@ -208,6 +215,7 @@ For **Oryctolagus cuniculus** the following options are available:
 - **evoppi_q_predpolyq**
 
 For **Rattus norvegicus** the following options are available:
+-------
 
 - **evoppi_q_intdb**
 
@@ -226,6 +234,7 @@ For **Rattus norvegicus** the following options are available:
 - **evoppi_q_predpolyq**
 
 For **Xenopus laevis** the following options are available:
+-------
 
 - **evoppi_q_intdb**
 
