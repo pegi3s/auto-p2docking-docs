@@ -118,7 +118,7 @@ For **Drosophila melanogaster** the following options are available:
 
 - **evoppi_q_predpolyq**
 
-"Curated Homo sapiens ATXN1 (from Ensembl) Drosophila melanogaster (PolyQ_models_22)", "Homo sapiens (from DIOPT) Drosophila melanogaster (PolyQ_models_22)", "Curated Homo sapiens ATXN1 (from DIOPT) Drosophila melanogaster (PolyQ_models_22)"
+"Curated Homo sapiens ATXN1 Drosophila melanogaster (from Ensembl) (PolyQ_models_22)", "Homo sapiens Drosophila melanogaster (from DIOPT) (PolyQ_models_22)", "Curated Homo sapiens ATXN1 Drosophila melanogaster (from DIOPT) (PolyQ_models_22)"
 
 For **Gallus gallus** the following options are available:
 -------
