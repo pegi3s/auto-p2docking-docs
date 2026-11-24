@@ -1,0 +1,98 @@
+Modules configuration
+*********************
+
+It should be noted that in all cases the project directory (``dir=``) and project name (``project=``) must be declared in the main auto-p2docking config file.
+
+Ligand selection
+*****
+
+evoppi_querier
+-------
+This module allows you to retrieve GeneID lists from the EvoPPI databases (http://evoppi.i3s.up.pt). It takes as input a GeneID and returns from EvoPPI the corresponding list(s) of interactors, as text files with one GeneID per line. This module can be used to save up to two GeneID lists only in the same output folder. If there are already two GeneID lists in the output folder the module will not run and will exit with a warning. The following parameters must be declared, one per line, in a config file, **which must be in the input folder of the module**:
+
+- ``evoppi_q_species=``
+- ``evoppi_q_geneid=``
+- ``evoppi_q_level=``
+- ``evoppi_q_intdb=``
+- ``evoppi_q_intmod=``
+- ``evoppi_q_intpolyq=``
+- ``evoppi_q_preddb=``
+- ``evoppi_q_predmod=``
+- ``evoppi_q_predpolyq=``
+- ``evoppi_q_max_int=``
+
+where:
+
+- ``evoppi_q_species`` indicates the name of the species of interest, for instance "Homo sapiens". The full list of available species can be found in the evoppi_querier_options section.
+
+- ``evoppi_q_geneid`` indicates the GeneID for the gene that encodes the protein to be studied.
+
+- ``evoppi_q_level`` specifies the interaction level (which is the degree of distance (up to a maximum of three) to retrieve transitive interactions).
+
+- ``evoppi_q_intdb`` indicates the name of the interactome databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons (for instance, "BioGRID; HIPPIE; Mentha; Mint;Pina2"). * means all databases.
+
+- ``evoppi_q_intmod`` indicates the name of the Modifiers interactome databases to be analysed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+
+- ``evoppi_q_intpolyq`` indicates the name of the PolyQ interactome databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+
+- ``evoppi_q_preddb`` indicates the name of the predictomes (predict interactome) databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+
+- ``evoppi_q_predmod`` indicates the name of the Modifiers predictomes databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+
+- ``evoppi_q_predpolyq`` indicates the name of the PolyQ predictomes databases to be analyzed. The full list of available databases can be found in the evoppi_querier_options section. If more than one database is to be analyzed, their names must be separated by semicolons. * means all databases.
+
+- ``evoppi_q_max_int`` Indicates the maximum number of interactions to be analyzed (a random sample taken from the full list of interactions).
+
+**Note 1**: all parameters are mandatory, otherwise the program will not run. evoppi_q_int.* and evoppi_q_pred.* can be empty, but at least one interactome/predictome name must be specified.
+**Note 2**: the output folder of EvoPPi accepts up to two output files.
+
+geneid2uniprotkb
+-------
+This module allows getting the reference UniProtKB number associated with a
+given GeneID. It accepts a list of Gene IDs, one per line, and returns a list of UniprotKB numbers
+from NCBI gene (https://www.ncbi.nlm.nih.gov/gene), one per line. The input file must have the .gi extension.
+
+intersect
+-------
+This module allows you to get the intersection of two or more UniProtKB or
+GeneID lists. It generates a list of all UniProtKBs or GeneIDs common to all files.
+
+exclude
+-------
+This module allows you, given two lists of two UniProtKBs/GeneIDs, to get one
+list with all UniProtKBs/GeneIDs that are not present in the file listing the GI numbers to be excluded (this file must have the words "to_be_excluded" in its name).
+
+copy
+-------
+
+This module copies all files and subfolders from an input directory to the specified output directory, without removing files already present in the destination. For the pipeline to work with PDB structures, ligand files must be placed in ``PDBs/Ligands`` and receptor files in ``PDBs/Receptor``, under the project folder (defined by ``project=`` in the main config file). For instance, the following commands can be used in the pipeline file::
+
+   copy ligand_inputs PDBs/Ligands
+   copy receptor_inputs PDBs/Receptor
+
+When ``copy`` is used with these directories, it also creates or updates the files ``PDBs/ligands_list.txt`` and ``PDBs/receptors_list.txt``, respectively. Each file contains the names of the PDB structures in the corresponding folder, one per line. These lists are used by modules that process individual ligands or receptors. The lists contain all PDB files in the destination folder, including any previously copied files, but do not include files in subfolders.
+
+This module cannot be used as part of a block and does not require the ligand or receptor list.
+
+h_prot_atlas
+-------
+This module allows retrieving lists of proteins encoded by genes expressed in a
+given tissue. It accepts as input a list with UniProtKb numbers, one per line, and returns
+a list of UniProtKb numbers, one per line, of those genes that are expressed in the
+specified tissue. In the auto-p2docking configuration file, there are three parameters to be specified (one per line), namely: ``h_prot_atlas_inc=``, ``h_prot_atlas_mode=``, and ``h_prot_atlas_exc=``
+
+- ``h_prot_atlas_inc``: list of tissues to be considered, separated by ;, or * to analyse all available tissues (that is used by default). For instance, h_prot_atlas_inc="Brain_cerebral_cortex; Brain_hippocampal_formation". The list of available tissues are: Brain_cerebral_cortex, Brain_hippocampal_formation,
+Brain_amygdala, Brain_basal_ganglia, Brain_thalamus, Brain_hypothalamus,
+Brain_midbrain, Brain_cerebellum, Brain_pons, Brain_medulla_oblongata,
+Brain_spinal_cord, Brain_white_matter, Choroid_plexus, Salivary_gland, Esophagus,
+Tongue, Stomach, Intestine, Pancreas, Kidney, Urinary_bladder, Breast, Vagina, Cervix,
+Endometrium, Fallopian_tube, Ovary, Placenta, Skin, Adipose_tissue,
+Seminal_vesicles, Prostate, Epididymis, Testis, Gallbladder, Liver, Lymphoid_tissue,
+Bone_marrow, Lung, Pituitary_gland, Thyroid_gland, Parathyroid_gland,
+Adrenal_gland, Smooth_muscle, Heart, Retina.
+
+- ``h_prot_atlas_mode``: you can select all proteins by writing union or only those
+that are present in all selected tissues if you write intersection . If you do
+not provide information in this field, union is used by default.
+
+- ``h_prot_atlas_exc``: If h_prot_atlas_inc=* has been declared, you can exclude specific tissue(s) by indicating their name(s), separated by ;.
